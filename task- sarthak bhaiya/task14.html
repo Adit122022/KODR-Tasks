@@ -1,0 +1,92 @@
+<!-- 14. ⁠Add a reset button to clear all text in a text area. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #8d8da0d9;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            outline: none;
+            resize: none;
+        }
+
+        textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .button-container {
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: #5695d8f6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Text Area with Reset Button</h1>
+    <textarea id="text" placeholder="Type something here..."></textarea>
+    <br>
+    <div class="button-container">
+        <button id="btn">Reset</button>
+    </div>
+</div>
+
+    <script>
+        const resetButton = document.querySelector('#btn');
+        const textArea = document.querySelector('#text');
+
+       
+        resetButton.addEventListener('click', () => {
+            textArea.value = ''; 
+        });
+    </script>
+    
+</body>
+</html>

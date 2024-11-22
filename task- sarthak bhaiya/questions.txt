@@ -11,7 +11,7 @@ Task
 9. Implement a "like" counter for a button that increments the count displayed next to it.
 10. Create a mouse follower
 11. ⁠Create a Hamburger menu animation
-12. ⁠Create a like feature similar to instagram (jab image pr double click hoga to heart bada hoga)
+12. ⁠Create a like feature similar to instagram (jab image pr double click hoga to heart bada hoga)⬇️
 13. ⁠ Make a "dark mode" button that toggles the background color of the page between black and white.
 14. ⁠Add a reset button to clear all text in a text area.
 15. ⁠Create a modal popup that appears when a button is clicked and disappears when clicking outside it or pressing the "Close" button.
