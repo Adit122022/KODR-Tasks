@@ -1,0 +1,17 @@
+Task
+
+1. Select an h1 element and change its background color to yellow when clicked.
+2. Add an event listener to a button that changes its text to "Clicked!" when pressed.
+3. When hovering over a paragraph, increase its font size by 5px.
+4. Toggle the visibility of an image when clicking a button.
+5. Change box color to random when clicking on the button and On hovering over a circle div, change its color to a random one and display its RGB value inside the circle.
+6. suggest a random winner of ipl 2025
+7. Add button that, when clicked, increase the size of their associated div boxes.
+8. Create a button that moves box randomly to a new position every time you click over it.
+9. Implement a "like" counter for a button that increments the count displayed next to it.
+10. Create a mouse follower
+11. ⁠Create a Hamburger menu animation
+12. ⁠Create a like feature similar to instagram (jab image pr double click hoga to heart bada hoga)
+13. ⁠ Make a "dark mode" button that toggles the background color of the page between black and white.
+14. ⁠Add a reset button to clear all text in a text area.
+15. ⁠Create a modal popup that appears when a button is clicked and disappears when clicking outside it or pressing the "Close" button.
