@@ -1,0 +1,71 @@
+<!-- 13. ⁠ Make a "dark mode" button that toggles the background color of the page between black and white. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOdE</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <Style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing :border-box;
+        }
+        html,body{
+        width :100%;
+        height :100%;
+        }
+        button{
+            outline: none;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5em;
+        }
+        button i{
+            /* font-size: 3em; */
+            margin-right: 10px;
+            background: transparent;
+            
+        }
+        :root{
+            --dark-bg:#000;
+            --dark-color:#fff;
+            --light-bg:#fff;
+            --light-color:#000;
+        }
+        /* use this variables for dark mode and light mode */
+
+    </Style>
+</head>
+<body>
+    <button id="toggleMode"><i class="ri-sun-fill"></i></button>
+
+    <script>
+        const btn = document.getElementById('toggleMode');
+        const body =document.querySelector('body');
+        let flage = 0
+btn.addEventListener('click', function(){
+if (flage ===0 ){
+    btn.innerHTML =`<i class="ri-moon-fill"></i>`;
+    body.style.backgroundColor = 'var(--dark-bg)';
+    body.style.color = 'var(--dark-color)';
+    flage = 1;
+}
+else{
+    btn.innerHTML = `<i class="ri-sun-fill"></i>`;
+    body.style.backgroundColor = 'var(--light-bg)';
+    body.style.color = 'var(--light-color)';
+    flage = 0;  
+ 
+}
+})
+        
+    </script>
+</body>
+</html>
