@@ -23,3 +23,5 @@ btn.addEventListener("click",()=>{
 
 const p = document.querySelector("#print");
  console.log(p);
+ p.textContent = "This is a test text";
+ 
