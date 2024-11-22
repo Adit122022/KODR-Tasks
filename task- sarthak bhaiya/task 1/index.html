@@ -6,17 +6,18 @@
     <title>Creating elements</title>
 </head>
 <body>
+    <button class=" px-5 py-2 bg-blue-400">create h1</button>
     
 
     <script>
 
-        // Create a new h1 element
-        const h1 = document.createElement('h1');
-        
-        h1.innerHTML ="BSDK BABU"
-        
-        // Append the new h1 element to the body
-        document.querySelector("body").appendChild(h1)
+       let btn = document.querySelector("button")
+       let body = document.querySelector("body")
+       btn.addEventListener("click", function() {
+            let h1 = document.createElement("h1");
+            h1.textContent = "BSDK BABU";
+            document.body.appendChild(h1);
+       })
     </script>
 </body>
 </html>
