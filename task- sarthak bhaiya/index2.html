@@ -1,0 +1,32 @@
+<!-- 2. Add an event listener to a button that changes its text to "Clicked!" when pressed. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- tailwind css -->
+      <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="container h mx-auto max-w-screen-lg px-4 py-8 flex flex-col justify-center items-center">
+            <button class="btn bg-blue-400 px-5 py-2 rounded">click</button>
+        </div>
+       
+    </body>
+    <script>
+        let flag =0;
+        const btn = document.querySelector('.btn');
+      btn.addEventListener("click",function(){
+       if (flag ===0){
+         btn.textContent = " Clicked !";
+        flag = 1;
+       }
+       else{
+         btn.textContent = "Click";
+        flag = 0;
+       }
+      })
+    
+    
+    </script>
+    </html>
