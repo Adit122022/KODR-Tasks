@@ -1,3 +1,4 @@
+// make a bulb  ad change the color whike clicking the bulb
 const btn = document.querySelector(".btn")
 const bulb = document.querySelector("#bulb")
 let flage =0;
@@ -17,3 +18,8 @@ btn.addEventListener("click",()=>{
         flage=0;
     }
 })
+
+// print the p tag in console   
+
+const p = document.querySelector("#print");
+ console.log(p);
