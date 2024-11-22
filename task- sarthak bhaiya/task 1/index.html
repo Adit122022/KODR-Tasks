@@ -4,20 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating elements</title>
+     <!-- tailwind css -->
+     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <button class=" px-5 py-2 bg-blue-400">create h1</button>
-    
+    <div id="root" class="container h mx-auto max-w-screen-lg px-4 py-8 flex flex-col justify-center items-center">
+    <button class=" px-5 py-2 bg-blue-400 rounded-xl text-lg">create div</button>
+    </div>
 
     <script>
 
-       let btn = document.querySelector("button")
-       let body = document.querySelector("body")
+    //    let btn = document.querySelector("button")
+    //    let root = document.querySelector("#root")
+    //    let flag =0
+    //    btn.addEventListener("click", function() {
+    //     if (flag <= 5){
+    //         let h1 = document.createElement("h1");
+    //         h1.textContent = "oooo yeah!";
+    //         root.appendChild(h1);
+    //         flag++;
+    //     }
+    //     else{
+    //         root.removeChild(h1);
+    //         flag = 0;
+    //     }
+           
+    //    })
+
+    // crating boxes on button click
+    let btn = document.querySelector("button")
+       let root = document.querySelector("#root")
+
        btn.addEventListener("click", function() {
-            let h1 = document.createElement("h1");
-            h1.textContent = "BSDK BABU";
-            document.body.appendChild(h1);
+      
+            let div = document.createElement("div");
+        div.style.backgroundColor = "red"
+        div.style.height = "200px"
+        div.style.width = "200px"
+        div.style.margin = "10px"   
+        div.style.borderRadius = "10px"
+        div.style.transition = "all 0.4s linear"
+        // div.classList.add("w-[200px]", "h-[200px]" ,"m-[10px]" ,"rounded-lg ");
+            root.appendChild(div);   
+            div.addEventListener("mouseover", function(){
+div.style.scale= "1.2"
+            }   ) 
+            div.addEventListener("mouseleave", function(){
+div.style.scale= "1"
+            }   ) 
        })
+       
     </script>
 </body>
 </html>
