@@ -1,0 +1,83 @@
+<!-- 7. Add button that, when clicked, increase the size of their associated div boxes. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+       *{
+       margin: 0;
+       padding: 0;
+       box-sizing :border-box;
+       }
+       html,body{
+       width :100%;
+       height :100%;
+       }
+       body{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           background-color: black;
+           color: white;
+           font-size: 2rem;
+           font-family: Arial, sans-serif;
+           position: relative;
+       }
+       h1,h2{
+           font-weight: bold;
+           margin: 20px;
+           text-transform: uppercase;
+           text-align: center;
+       }
+       .btn{
+           background-color: blue;
+           color: white;
+           padding: 10px 20px;
+           border-radius: 20px;
+           border: none;
+           cursor: pointer;
+           transition: background-color 0.3s ease;
+       }
+      .btn:hover{
+        background-color: red;
+    
+      }
+      #box{
+           width : 200px;
+           height : 200px;
+           background-color: blueviolet;
+           border-radius : 10px;
+           transition : all  0.5s linear ;
+           border: 1px solid white;
+       }
+    </style>
+</head>
+<body>
+   <div id="box"></div>
+ <button class="btn">
+   click
+ </button>
+ <script>
+   let box = document.getElementById("box");
+   let btn = document.querySelector(".btn");
+   let flag =0
+   btn.addEventListener("click", function(){
+    if(flag ===0){
+         box.style.width = "500px"
+    box.style.height = "500px"
+    flag=1;
+    }
+    else{
+        box.style.width = "200px"
+    box.style.height = "200px"
+    flag=0;
+    }
+   
+       
+   });
+ </script>
+</body>
+</html>
