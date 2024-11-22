@@ -23,5 +23,8 @@ btn.addEventListener("click",()=>{
 
 const p = document.querySelector("#print");
  console.log(p);
+//  p.innerHTML = "<i> hello</i>";
  p.textContent = "This is a test text";
- p.style.color = "red";
+p.addEventListener("mouseover", function(){
+    p.style.color = "red";
+})
