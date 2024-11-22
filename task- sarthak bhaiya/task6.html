@@ -58,6 +58,7 @@
         const btn = document.querySelector('.btn');
         let h2  = document.querySelector("h2"); 
         let winner = ["LSG","CSK", "DC", " KKR","RCB","RR","GC"];
+        let body = document.querySelector("body");  
 btn.addEventListener("click",function(){
     let randomWinner = winner[Math.floor(Math.random() * winner.length)];
     h2.textContent = randomWinner === "CSK" ? `The winner of 2025 is ${randomWinner}` :`${randomWinner}`
