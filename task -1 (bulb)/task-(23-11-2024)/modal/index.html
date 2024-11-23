@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing :border-box;
+        }
+        html,body{
+        width :100%;
+        height :100%;
+        }
+        .gallery{
+            padding: 4em 5em;
+            display: grid;
+            gap: 2em;
+            background-color: azure;
+            grid-template-columns: repeat(auto-fill ,minmax(250px,1fr));
+        }
+        img{
+            width: 100%;
+         aspect-ratio: 1/1;
+           border-radius: 10px;
+            transition: transform 0.5s;
+        
+        }
+        .modal{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left:0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        
+            backdrop-filter: blur(20px);
+        }
+        .modal img{
+            aspect-ratio: 4/3;
+            max-width: 30em;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+
+<img src="" alt="">
+    </div>
+   
+        <div class="gallery">
+           <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+           <img src="https://images.unsplash.com/photo-1544715299-be6aa4573478?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+           <img src="https://images.unsplash.com/photo-1558040587-a182bf2393fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+           <img src="https://plus.unsplash.com/premium_photo-1689935820502-3416f690190d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D   " alt="">
+           <img src="https://images.unsplash.com/photo-1558040587-a182bf2393fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+   
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
