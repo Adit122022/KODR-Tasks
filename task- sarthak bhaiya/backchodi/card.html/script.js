@@ -103,6 +103,7 @@ const users = [
   let clutter = ''
   let container = document.querySelector(".container")
   users.forEach(function(value,index){
+    
 clutter +=`<div class="card">
     <div class="header">
      ${value.available ? '<span>Available</span>' : '<div></div>'}
@@ -129,4 +130,5 @@ clutter +=`<div class="card">
 </div>`
     container.innerHTML = clutter;
     
+   
   })
