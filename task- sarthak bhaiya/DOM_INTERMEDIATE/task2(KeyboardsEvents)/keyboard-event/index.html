@@ -24,7 +24,7 @@
         #parent{
             width: 80%;
             height: 80%;
-            padding: 10vw 20vw;
+            
             position: relative;
             border: 2px dotted #777;
             margin:auto;
@@ -121,13 +121,13 @@ function checkCollision() {
                 image.style.visibility = 'visible'; // Show the image if outside
             }
         }
- // Reset button functionality
- resetButton.addEventListener("click", function() {
-            x = 0; // Reset x-coordinate
-            y = 0; // Reset y-coordinate
-            image.style.left = x + "px"; // Reset position
+ 
+ document.querySelector("button").addEventListener("click", function() {
+            x = 0; 
+            y = 0; 
+            image.style.left = x + "px"; 
             image.style.top = y + "px";
-            image.style.visibility = 'visible'; // Make image visible
+            image.style.visibility = 'visible'; 
         });
 
     </script>
