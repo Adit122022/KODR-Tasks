@@ -104,7 +104,7 @@ const users = [
   let container = document.querySelector(".container")
   users.forEach(function(value,index){
     
-clutter +=`<div class="card">
+clutter +=`<div id="${index}" class="card">
     <div class="header">
      ${value.available ? '<span>Available</span>' : '<div></div>'}
         <p> $${value.rate}/hr </p>
