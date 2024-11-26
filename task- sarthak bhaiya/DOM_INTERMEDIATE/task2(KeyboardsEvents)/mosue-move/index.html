@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse move</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing :border-box;
+        }
+        html,body{
+        width :100%;
+        height :100%;
+        }
+        #cursor{
+        position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            transition: transform 0.2s linear;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="cursor"></div>
+    <script>
+        const cursor = document.getElementById('cursor');
+        
+        document.addEventListener('mousemove', function(event) {
+            cursor.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+        });
+    </script>
+</body>
+</html>
