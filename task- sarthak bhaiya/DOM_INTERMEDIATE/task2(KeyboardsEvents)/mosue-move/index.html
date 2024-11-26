@@ -31,8 +31,9 @@
         const cursor = document.getElementById('cursor');
         
         document.addEventListener('mousemove', function(event) {
-            cursor.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
-        });
+            // cursor.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+            cursor.style.left = event.clientX    + 'px';
+            cursor.style.top = event.clientY +"px"})
     </script>
 </body>
 </html>
