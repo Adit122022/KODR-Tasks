@@ -3,10 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chutki ka black hole</title>
+    <title>Bicycle</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing :border-box;
+        }
+        html,body{
+        width :100%;
+        height :100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        #parent{
+            width: 80%;
+            height: 80%;
+            padding: 10vw 20vw;
+            position: relative;
+            border: 2px dotted #777;
+            margin:auto;
+        }
+        img{
+            width: 200px;
+            object-fit: cover;
+            border-radius: 40px;
+            position: absolute;
+            object-position: bottom;
+            transition: all 200ms linear;
+        }
+        #dead-end{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+background-color: black !important;;
+            border-radius: 50%;
+            bottom: 0;
+            right: 0;
+        }
+        .btn{
+          
+           margin-bottom: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            outline: none;
+            border: none;
+            font-size: 20px;
+
+        }
+        button:active{
+            scale: 0.9;
+        }
+    </style>
 </head>
 <body>
+    <div id="parent">
+        <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <div id="dead-end">
+    </div>
+   
+
+    </div>
+    <div class="btn">
+        <button>Reset</button>
+    </div>
+    <script>
+        let deadEnd = document.getElementById('dead-end');
+        let image = document.querySelector('img');
+        let x =0;
+        let y=0;
+document.addEventListener("keydown",function(e) {
+    console.log(e.code)
+    if(e.code == "ArrowLeft"){
+       x-=10;
+       image.style.left = x + "px";
+    }
+else if(e.code == "ArrowRight"){
+    x+=10;
+    image.style.left = x + "px";
+}
     
+else if(e.code == "ArrowUp"){
+    y-=10;
+    image.style.top = y + "px";
+}
     
+else if(e.code == "ArrowDown"){
+    y+=10;
+    image.style.top = y + "px";
+}
+checkCollision();
+})
+function checkCollision() {
+            const imageRect = image.getBoundingClientRect();
+            const deadEndRect = deadEnd.getBoundingClientRect();
+
+            // Check if image is within the dead-end area
+            if (
+                imageRect.right > deadEndRect.left &&
+                imageRect.left < deadEndRect.right &&
+                imageRect.bottom > deadEndRect.top &&
+                imageRect.top < deadEndRect.bottom
+            ) {
+                image.style.visibility = 'hidden'; // Hide the image
+            } else {
+                image.style.visibility = 'visible'; // Show the image if outside
+            }
+        }
+ // Reset button functionality
+ resetButton.addEventListener("click", function() {
+            x = 0; // Reset x-coordinate
+            y = 0; // Reset y-coordinate
+            image.style.left = x + "px"; // Reset position
+            image.style.top = y + "px";
+            image.style.visibility = 'visible'; // Make image visible
+        });
+
+    </script>
 </body>
 </html>
