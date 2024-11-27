@@ -50,6 +50,9 @@ html, body {
 }
 #parent main header .stories img {
   width: 5.5em;
+  height: 5.5em;
+  -o-object-position: top;
+     object-position: top;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
