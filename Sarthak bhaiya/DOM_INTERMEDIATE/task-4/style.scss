@@ -48,9 +48,9 @@ height :100%;
         .stories{
         text-align: center;
             img{
-                width: 5.5em;
-                height: 5.5em;
-                object-position: top;
+                width: 6.5em;
+                height: 6.5em;
+                object-position: 50% 29%;
                 object-fit: cover;
                 border-radius: 50%;
                 
@@ -88,8 +88,17 @@ height :100%;
         .story-content {
             position: relative;
             text-align: center;
-            .story-content img {
+            img {
                 max-width: 90%;
+                max-height: 100%;
+                object-fit: contain;
+                border-radius: 5px;
+            }
+             video {
+                max-width: 80%;
+                max-height: 100%;
+                object-fit: contain;
+                border-radius: 5px;
                 
             }
             .close-story {
