@@ -10,12 +10,106 @@ html, body {
 }
 
 #parent {
-  padding: 2em 4em;
+  position: relative;
+  padding: 1em;
   width: 100%;
   height: 100%;
-  overflow: scroll;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2em;
-  grid-auto-rows: minmax(200px, auto);
+}
+#parent nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#parent nav .insta-logo {
+  width: 12vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#parent nav .icons {
+  font-size: 1.5em;
+}
+#parent nav .icons a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 1em;
+}
+#parent main header {
+  display: flex;
+  width: 100%;
+  padding: 1em;
+  gap: 2.5em;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#parent main header::-webkit-scrollbar {
+  display: none;
+}
+#parent main header .stories {
+  text-align: center;
+}
+#parent main header .stories img {
+  width: 5.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+#parent main header .stories .story {
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#parent main header .stories .story img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 0;
+}
+#parent main .story-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+#parent main .story-popup .story-content {
+  position: relative;
+  text-align: center;
+  /* Loading Bar on top of the story */
+}
+#parent main .story-popup .story-content .story-content img {
+  max-width: 90%;
+}
+#parent main .story-popup .story-content .close-story {
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1em;
+}
+#parent main .story-popup .story-content .loading-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.3em 0;
+  border-radius: 40px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 64, 128, 0.8235294118);
+  transition: width 5s linear; /* Smooth transition for the loading bar */
 }/*# sourceMappingURL=style.css.map */
