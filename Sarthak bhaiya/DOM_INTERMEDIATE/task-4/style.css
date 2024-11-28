@@ -9,32 +9,39 @@ html, body {
   height: 100%;
 }
 
-#parent {
+#root {
+  width: 100%;
+  height: 100%;
+}
+#root #parent {
+  overflow: hidden;
   position: relative;
   padding: 1em;
   width: 100%;
   height: 100%;
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.7); /* Outer highlight for light source */
+  border-radius: 5px;
 }
-#parent nav {
+#root #parent nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#parent nav .insta-logo {
+#root #parent nav .insta-logo {
   width: 12vw;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#parent nav .icons {
+#root #parent nav .icons {
   font-size: 1.5em;
 }
-#parent nav .icons a {
+#root #parent nav .icons a {
   text-decoration: none;
   color: #333;
   margin-left: 1em;
 }
-#parent main header {
+#root #parent main header {
   display: flex;
   width: 100%;
   padding: 1em;
@@ -42,13 +49,21 @@ html, body {
   overflow-x: auto;
   overflow-y: hidden;
 }
-#parent main header::-webkit-scrollbar {
+#root #parent main header::-webkit-scrollbar {
   display: none;
 }
-#parent main header .stories {
+#root #parent main header .stories {
   text-align: center;
 }
-#parent main header .stories img {
+#root #parent main header .stories .pfp {
+  background: linear-gradient(45deg, #3c74fe, #ff5e68, #bd19ff, #3c74fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border-radius: 50%;
+}
+#root #parent main header .stories img {
   width: 6.5em;
   height: 6.5em;
   -o-object-position: 50% 29%;
@@ -57,7 +72,7 @@ html, body {
      object-fit: cover;
   border-radius: 50%;
 }
-#parent main header .stories .story {
+#root #parent main header .stories .story {
   width: 100vw;
   height: 100vh;
   background-color: #333;
@@ -68,14 +83,14 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-#parent main header .stories .story img {
+#root #parent main header .stories .story img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 0;
 }
-#parent main .story-popup {
+#root #parent main .story-popup {
   display: none;
   position: fixed;
   top: 0;
@@ -86,26 +101,28 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-#parent main .story-popup .story-content {
+#root #parent main .story-popup .story-content {
   position: relative;
   text-align: center;
-  /* Loading Bar on top of the story */
-}
-#parent main .story-popup .story-content img {
   max-width: 90%;
   max-height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 5px;
+  /* Loading Bar on top of the story */
 }
-#parent main .story-popup .story-content video {
+#root #parent main .story-popup .story-content img {
   max-width: 80%;
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 5px;
 }
-#parent main .story-popup .story-content .close-story {
+#root #parent main .story-popup .story-content video {
+  max-width: 80%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 5px;
+}
+#root #parent main .story-popup .story-content .close-story {
   position: absolute;
   top: 1em;
   right: 2em;
@@ -116,7 +133,7 @@ html, body {
   cursor: pointer;
   font-size: 1em;
 }
-#parent main .story-popup .story-content .loading-bar {
+#root #parent main .story-popup .story-content .loading-bar {
   position: absolute;
   top: 0;
   left: 0;
