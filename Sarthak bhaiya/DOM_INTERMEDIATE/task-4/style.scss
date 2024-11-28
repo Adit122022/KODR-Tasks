@@ -1,163 +1,210 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing :border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-width :100%;
-height :100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
-#root{
+#root {
+  width: 100%;
+  height: 100%;
+
+  #parent {
+    overflow: hidden;
+    position: relative;
+  
     width: 100%;
     height: 100%;
-  
-    #parent{
-        
-        overflow: hidden;
-        position: relative;
-        padding: 1em;
-        width: 100%;
-        height: 100%;
-        box-shadow: 
-        inset 4px 4px 8px rgba(0, 0, 0, 0.2),  /* Inner shadow for depth */
-        inset -4px -4px 8px rgba(255, 255, 255, 0.5), /* Inner highlight */
-        6px 6px 12px rgba(0, 0, 0, 0.2), /* Outer shadow for a lifted effect */
-        -6px -6px 12px rgba(255, 255, 255, 0.7); /* Outer highlight for light source */
-        border-radius: 5px;
-        
-       nav{
-        width: 100%;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+      /* Inner shadow for depth */ inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      /* Inner highlight */ 6px 6px 12px rgba(0, 0, 0, 0.2),
+      /* Outer shadow for a lifted effect */ -6px -6px 12px
+        rgba(255, 255, 255, 0.7); /* Outer highlight for light source */
+    border-radius: 5px;
+
+    nav {
+      width: 100%;
+      padding: 0 0.5em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #9d969638;
+      .insta-logo {
+        width: 7em;
+        object-fit: contain;
+      }
+      .icons {
+        font-size: 1.5em;
+        a {
+          text-decoration: none;
+          color: #333;
+          margin-left: 1em;
+        }
+      }
+    }
+    main {
+      header {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: 100vw;
+        padding: 1em 0;
+        gap: 0.5em;
+        overflow-x: auto;
+        overflow-y: hidden;
         border-bottom: 2px solid #9d969638;
-        .insta-logo{
-           width: 7em;
-           object-fit: contain;
+
+        &::-webkit-scrollbar {
+          display: none;
         }
-        .icons{
-            font-size: 1.5em;
-           a{
-            text-decoration: none;
-            color: #333;
-            margin-left: 1em;
-           }
-        }
-       }
-       main{
-        header{
+        .stories {
+          text-align: center;
+          .pfp {
+            background: linear-gradient(
+              45deg,
+              #3c74fe,
+              #ff5e68,
+              #bd19ff,
+              #3c74fe
+            );
             display: flex;
-            width: 100%;
-            padding: 1em;
-            gap: 0.5em;
-            overflow-x: auto;
-            overflow-y:hidden ;
-            border-bottom: 2px solid #9d969638;
-        
-            &::-webkit-scrollbar{
-                display: none;
-            }
-            .stories{
-            text-align: center;
-            .pfp{
-                background: linear-gradient(45deg, #3c74fe, #ff5e68, #bd19ff,#3c74fe,);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 4px;
-                border-radius: 50%;
-            }
-                img{
-                    width: 5.5em;
-                    height: 5.5em;
-                    object-position: 50% 29%;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    
-                }
-                .story{
-                    width: 100vw;
-                    height: 100vh;
-                    background-color: #333;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    display: none;
-                    justify-content: center;
-                    align-items: center;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: contain;
-                        border-radius: 0;
-                    }
-                }
-    
-            }
-        }
-        .story-popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
             justify-content: center;
             align-items: center;
-            .story-content {
-                position: relative;
-                text-align: center;
-                max-width: 100%;
-                height: 100%;
-                img {
-                width: 100%;
-                height: 100%;
-                    object-fit: cover;
-                    border-radius: 5px;
-                }
-                 video {
-                width: 100%;
-                height: 100%;
-                    object-fit: cover;
-                    border-radius: 5px;
-                    
-                }
-                .close-story {
-                    position: absolute;
-                    top: 1em;
-                    right: 2em;
-                    background-color: transparent;
-                    color: white;
-                    border: none;
-                    border-radius: 50%;
-                    cursor: pointer;
-                    font-size: 1em;
-                    
-                }
-                     /* Loading Bar on top of the story */
-             .loading-bar {
-                position: absolute;
-                top: 0;
-                left: 0;
-                padding: 0.3em 0;
-        
-        border-radius: 40px;     
-           width: 100%;
-           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-                background-color: #ff4080d2;
-                transition: width 5s linear; /* Smooth transition for the loading bar */
+            padding: 4px;
+            border-radius: 50%;
+          }
+          img {
+            width: 4.5em;
+            height: 4.5em;
+            object-position: 50% 29%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          .story {
+            width: 100vw;
+            height: 100vh;
+            background-color: #333;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              border-radius: 0;
             }
-            }
+          }
         }
-        
-        
-        
-        
-        
-      
-    
-        
-       }
+      }
+      .story-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        .story-content {
+          position: relative;
+          text-align: center;
+          max-width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+          video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+          .close-story {
+            position: absolute;
+            top: 1em;
+            right: 2em;
+            background-color: transparent;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1em;
+          }
+          /* Loading Bar on top of the story */
+          .loading-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0.3em 0;
+
+            border-radius: 40px;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            background-color: #ff4080d2;
+            transition: width 5s linear; /* Smooth transition for the loading bar */
+          }
+        }
+      }
+
+      .post-section {
+        .post {
+          .post-header {
+            .user-info {
+              display: flex;
+              align-items: center;
+              gap: 0.3em;
+              img {
+                width: 3em;
+                object-fit: cover;
+                border-radius: 50%;
+              }
+              .user {
+               font-size: 0.9em;
+               .user-name{
+                font-weight: 900;
+    font-size: 1.03em;
+    width: 1000%;
+               }
+               .post-time{
+                font-size: 0.8em;
+                 color: rgba(0, 0, 0, 0.6);
+                 margin-left: 0.5em;
+               }
+              }
+              .options{
+                margin-left: 45%;
+              }
+            }
+          }
+          .post-image {
+            margin-top: 1em;
+            img{
+                width: 100%;
+            }
+          }
+          .like{
+            color: #333;
+            cursor: pointer;
+            font-size: 1.5em;
+           padding: 0 0.5em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+          }
+        }
+      }
     }
+  }
 }

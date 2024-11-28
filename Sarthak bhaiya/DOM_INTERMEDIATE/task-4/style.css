@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -16,7 +17,6 @@ html, body {
 #root #parent {
   overflow: hidden;
   position: relative;
-  padding: 1em;
   width: 100%;
   height: 100%;
   box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.7); /* Outer highlight for light source */
@@ -24,6 +24,7 @@ html, body {
 }
 #root #parent nav {
   width: 100%;
+  padding: 0 0.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,8 +45,8 @@ html, body {
 }
 #root #parent main header {
   display: flex;
-  width: 100%;
-  padding: 1em;
+  width: 100vw;
+  padding: 1em 0;
   gap: 0.5em;
   overflow-x: auto;
   overflow-y: hidden;
@@ -66,8 +67,8 @@ html, body {
   border-radius: 50%;
 }
 #root #parent main header .stories img {
-  width: 5.5em;
-  height: 5.5em;
+  width: 4.5em;
+  height: 4.5em;
   -o-object-position: 50% 29%;
      object-position: 50% 29%;
   -o-object-fit: cover;
@@ -145,4 +146,50 @@ html, body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 64, 128, 0.8235294118);
   transition: width 5s linear; /* Smooth transition for the loading bar */
+}
+#root #parent main .post-section .post .post-header .user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+#root #parent main .post-section .post .post-header .user-info img {
+  width: 3em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+#root #parent main .post-section .post .post-header .user-info .user {
+  font-size: 0.9em;
+}
+#root #parent main .post-section .post .post-header .user-info .user .user-name {
+  font-weight: 900;
+  font-size: 1.03em;
+  width: 1000%;
+}
+#root #parent main .post-section .post .post-header .user-info .user .post-time {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 0.5em;
+}
+#root #parent main .post-section .post .post-header .user-info .options {
+  margin-left: 45%;
+}
+#root #parent main .post-section .post .post-image {
+  margin-top: 1em;
+}
+#root #parent main .post-section .post .post-image img {
+  width: 100%;
+}
+#root #parent main .post-section .post .like {
+  color: #333;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 0 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#root #parent main .post-section .post .like a {
+  color: inherit;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
