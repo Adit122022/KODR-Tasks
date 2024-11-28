@@ -1,19 +1,19 @@
 const users = [
     {
         username: "Mei_MEi",
-        pfp: "https://i.pinimg.com/736x/f5/be/df/f5bedf73cea46e267ac1c4adada86d62.jpg",
+        pfp: "https://64.media.tumblr.com/51a18b95073edecb45226833487c653a/a5e8a463cc9842b3-ed/s540x810/28c90ac433d9923c86cc2640d74c4bf3c603c8d9.gifv",
         story: "https://v1.pinimg.com/videos/mc/720p/b3/8b/c0/b38bc024b567dbdbcf86f42f0b01dba7.mp4",
         mediaType: "video"
     },
     {
         username: "Andrew ",
-        pfp: "https://i.pinimg.com/736x/37/8d/dd/378ddd8de0059ccaa019296037db5c93.jpg",
+        pfp: "https://img.wattpad.com/5031717c65cc5d8573a77fad2a8d24150730bef8/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5242716f49583932745a50547a513d3d2d313132393832373535392e313661346365613033633566353234323234303635323438383730342e676966",
         story: "https://v1.pinimg.com/videos/mc/720p/b8/84/d0/b884d0b12da13a161b992028a2c2701e.mp4",
         mediaType: "video"
     },
     {
         username: "Itachi",
-        pfp: "https://s3.ezgif.com/tmp/ezgif-3-292727ee2c.gif",
+        pfp: "https://media1.giphy.com/media/ADSJHOoIvyjKM/200w.gif?cid=6c09b952xe68wfiy5lz72gt9tzh5fidq7xnxi3hy94aspv2t&ep=v1_gifs_search&rid=200w.gif&ct=g",
         story: "https://v1.pinimg.com/videos/mc/720p/75/e1/e9/75e1e9878137c00487a245e9b229bbdb.mp4",
          mediaType: "video"
 
@@ -85,7 +85,7 @@ header.addEventListener('click', function(e) {
     const loadingBar = document.querySelector(".loading-bar");
     loadingBar.style.width = "0%";
     setTimeout(function() {
-        loadingBar.style.transition = "width 5s linear"; 
+        loadingBar.style.transition = "width 8s linear"; 
         loadingBar.style.width = "100%"; 
     }, 500); 
 
