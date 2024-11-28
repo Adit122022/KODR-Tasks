@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
 html,
 body {
@@ -13,9 +14,10 @@ body {
   height: 100%;
 
   #parent {
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
-  
+    overflow-y: scroll;
+
     width: 100%;
     height: 100%;
     box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2),
@@ -24,7 +26,9 @@ body {
       /* Outer shadow for a lifted effect */ -6px -6px 12px
         rgba(255, 255, 255, 0.7); /* Outer highlight for light source */
     border-radius: 5px;
-
+    &::-webkit-scrollbar {
+      display: none;
+    }
     nav {
       width: 100%;
       padding: 0 0.5em;
@@ -73,6 +77,12 @@ body {
             align-items: center;
             padding: 4px;
             border-radius: 50%;
+          }
+          p {
+            font-family: "Parkinsans", sans-serif;
+            font-weight: 400;
+            margin-top: 0.7em;
+            font-size: 0.9em;
           }
           img {
             width: 4.5em;
@@ -155,7 +165,11 @@ body {
       }
 
       .post-section {
+
         .post {
+          padding: 2em 0;
+         
+          border-bottom: 2px solid rgba(157, 150, 150, 0.2196078431);
           .post-header {
             .user-info {
               display: flex;
@@ -163,45 +177,76 @@ body {
               gap: 0.3em;
               img {
                 width: 3em;
+                height: 3em;
                 object-fit: cover;
                 border-radius: 50%;
               }
               .user {
-               font-size: 0.9em;
-               .user-name{
-                font-weight: 900;
-    font-size: 1.03em;
-    width: 1000%;
-               }
-               .post-time{
-                font-size: 0.8em;
-                 color: rgba(0, 0, 0, 0.6);
-                 margin-left: 0.5em;
-               }
+                font-size: 0.9em;
+                .user-name {
+                  font-weight: 600;
+                  font-size: 1.03em;
+                  font-family: "Parkinsans";
+                  width: 1000%;
+                }
+                .post-time {
+                  font-size: 0.8em;
+                  color: rgba(0, 0, 0, 0.6);
+                  margin-left: 0.5em;
+                }
               }
-              .options{
+              .options {
                 margin-left: 45%;
               }
             }
           }
           .post-image {
             margin-top: 1em;
-            img{
-                width: 100%;
+            img {
+              width: 100%;
             }
           }
-          .like{
+          .like {
             color: #333;
             cursor: pointer;
-            font-size: 1.5em;
-           padding: 0 0.5em;
+            font-size: 1.4em;
+            padding: 0 0.5em;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            a{
-                color: inherit;
-                text-decoration: none;
+            a {
+              color: inherit;
+              text-decoration: none;
+              span {
+                font-size: 0.8em;
+              }
             }
+          }
+          .discription {
+            margin-top: 1em;
+            padding: 0 0.5em ;
+           p{
+            padding: 0 0.5em ;
+            font-size: 0.8em;
+            line-height: 1.22;
+          span{
+            font-weight: 600;
+          }
+          .more{
+            opacity: 0.5;
+          }
+           } 
+           .bottom{
+            display: flex;
+            flex-direction: column;
+            font-size: 0.8em;
+            .m-x{
+              margin: 0.5em 0;
+            }
+            .more{
+              opacity: 0.5;
+            }
+           }
           }
         }
       }

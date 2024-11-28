@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
 
 html,
@@ -15,12 +16,16 @@ body {
   height: 100%;
 }
 #root #parent {
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
+  overflow-y: scroll;
   width: 100%;
   height: 100%;
   box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.5), 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.7); /* Outer highlight for light source */
   border-radius: 5px;
+}
+#root #parent::-webkit-scrollbar {
+  display: none;
 }
 #root #parent nav {
   width: 100%;
@@ -65,6 +70,12 @@ body {
   align-items: center;
   padding: 4px;
   border-radius: 50%;
+}
+#root #parent main header .stories p {
+  font-family: "Parkinsans", sans-serif;
+  font-weight: 400;
+  margin-top: 0.7em;
+  font-size: 0.9em;
 }
 #root #parent main header .stories img {
   width: 4.5em;
@@ -147,6 +158,10 @@ body {
   background-color: rgba(255, 64, 128, 0.8235294118);
   transition: width 5s linear; /* Smooth transition for the loading bar */
 }
+#root #parent main .post-section .post {
+  padding: 2em 0;
+  border-bottom: 2px solid rgba(157, 150, 150, 0.2196078431);
+}
 #root #parent main .post-section .post .post-header .user-info {
   display: flex;
   align-items: center;
@@ -154,6 +169,7 @@ body {
 }
 #root #parent main .post-section .post .post-header .user-info img {
   width: 3em;
+  height: 3em;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -162,8 +178,9 @@ body {
   font-size: 0.9em;
 }
 #root #parent main .post-section .post .post-header .user-info .user .user-name {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 1.03em;
+  font-family: "Parkinsans";
   width: 1000%;
 }
 #root #parent main .post-section .post .post-header .user-info .user .post-time {
@@ -183,7 +200,7 @@ body {
 #root #parent main .post-section .post .like {
   color: #333;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.4em;
   padding: 0 0.5em;
   display: flex;
   align-items: center;
@@ -192,4 +209,33 @@ body {
 #root #parent main .post-section .post .like a {
   color: inherit;
   text-decoration: none;
+}
+#root #parent main .post-section .post .like a span {
+  font-size: 0.8em;
+}
+#root #parent main .post-section .post .discription {
+  margin-top: 1em;
+  padding: 0 0.5em;
+}
+#root #parent main .post-section .post .discription p {
+  padding: 0 0.5em;
+  font-size: 0.8em;
+  line-height: 1.22;
+}
+#root #parent main .post-section .post .discription p span {
+  font-weight: 600;
+}
+#root #parent main .post-section .post .discription p .more {
+  opacity: 0.5;
+}
+#root #parent main .post-section .post .discription .bottom {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+}
+#root #parent main .post-section .post .discription .bottom .m-x {
+  margin: 0.5em 0;
+}
+#root #parent main .post-section .post .discription .bottom .more {
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
