@@ -84,9 +84,10 @@ header.addEventListener('click', function(e) {
     }
     const loadingBar = document.querySelector(".loading-bar");
     loadingBar.style.width = "0%";
-    setTimeout(function() {
-        loadingBar.style.transition = "width 8s linear"; 
-        loadingBar.style.width = "100%"; 
+    let time = 0;
+    setInterval(function() {
+        // loadingBar.style.transition = "width 8s linear"; 
+        loadingBar.style.width = `${time++}%` ; 
     }, 500); 
 
     setTimeout(function() {
