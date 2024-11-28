@@ -94,6 +94,7 @@
     }, 100); 
     
         setTimeout(function() {
+            clearInterval(intervalue)
             storyPopup.style.display = "none"; 
         }, 10000); 
     });
