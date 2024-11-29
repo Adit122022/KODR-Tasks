@@ -201,7 +201,7 @@ function postFun(){
               </div>
               <div class="like">
                 <div class="left">
-                  <a href=""> ${value.like ? `<i class="ri-heart-3-fill"></i>` : `<i class="ri-heart-3-line"></i>`} <span>${value.likeCount}</span></a>
+                  <a href=""> ${value.like ? `<i style="color: #eb0e34db;"  class="ri-heart-3-fill"></i>` : `<i class="ri-heart-3-line"></i>`} <span>${value.likeCount}</span></a>
                 <a href="">   <i class="ri-chat-3-line"></i>
                 <span>${value.commentCount}</span></a>
                 <a href=""><i class="ri-send-plane-fill"></i>
