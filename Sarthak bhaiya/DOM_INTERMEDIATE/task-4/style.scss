@@ -205,15 +205,16 @@ body {
             position: relative;
             i{
               font-size: 5em;
-              color: white;
+              color: #eb0e3461;
               position: absolute;
               top: 50%;
               left: 50%;
-              transform: translate(-50% ,-50% ) scale(1);
+              transform: translate(-50% ,-50% ) scale(0);
             }
             margin-top: 1em;
             img {
               width: 100%;
+              // pointer-events: none;
             }
           }
           .like {

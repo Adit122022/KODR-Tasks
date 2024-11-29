@@ -198,11 +198,11 @@ body {
 }
 #root #parent main .post-section .post .post-image i {
   font-size: 5em;
-  color: white;
+  color: rgba(235, 14, 52, 0.3803921569);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0);
 }
 #root #parent main .post-section .post .post-image img {
   width: 100%;
