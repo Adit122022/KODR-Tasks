@@ -107,6 +107,7 @@ body {
 #root #parent main .story-popup {
   display: none;
   position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
@@ -155,7 +156,7 @@ body {
   border-radius: 40px;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 64, 128, 0.8235294118);
+  background-color: rgba(186, 184, 188, 0.82);
   transition: width 5s linear; /* Smooth transition for the loading bar */
 }
 #root #parent main .post-section .post {
@@ -192,7 +193,16 @@ body {
   margin-left: 45%;
 }
 #root #parent main .post-section .post .post-image {
+  position: relative;
   margin-top: 1em;
+}
+#root #parent main .post-section .post .post-image i {
+  font-size: 5em;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
 }
 #root #parent main .post-section .post .post-image img {
   width: 100%;

@@ -112,7 +112,7 @@
     
 })();
 // post feature
-(function(){
+function postFun(){
   let post =  [
         {
             "username": "travel_diaries",
@@ -177,12 +177,12 @@
     ]
     let posts=document.querySelector(".post-section")
     let clutter =''
-    post.forEach(function(value){
+    post.forEach(function(value,index){
         clutter +=`  <!-- post -->
              <div class="post">
               <div class="post-header">
                 <div class="user-info">
-                  <img class="user-profile-pic" src="${value.userprofile}" alt="">
+                  <img  class="user-profile-pic" src="${value.userprofile}" alt="">
                  <div class="user">
                   <div class="user-name">${value.username}</div>
                   <div class="post-time">${value.userlocation}</div>
@@ -194,7 +194,7 @@
                 </div>
               </div>
               <div class="post-image">
-                <img src="${value.userPost}" alt="">
+                <img id= ${index} src="${value.userPost}" alt="">
               </div>
               <div class="like">
                 <div class="left">
@@ -221,5 +221,16 @@
     
     }
 )
+posts.addEventListener('click',function(dets){
+// console.log(post[dets.target.id].likeCount++)
+    if(!post[dets.target.id].like == true){
+        post[dets.target.id].likeCount++;
+        postFun();
+        
+    }else{
+        console.log('not liked')
+    }
+})
     posts.innerHTML = clutter;
-})();
+};
+postFun();
