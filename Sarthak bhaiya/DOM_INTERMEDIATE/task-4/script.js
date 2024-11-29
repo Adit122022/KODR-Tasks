@@ -196,16 +196,16 @@ function postFun(){
                 </div>
               </div>
               <div class="post-image">
-                <img id= ${index} src="${value.userPost}" alt="">
+                <img id= ${index}  src="${value.userPost}" alt="">
                 <i id="heart" class="ri-heart-3-fill"></i>
               </div>
               <div class="like">
                 <div class="left">
-                  <a href=""> ${value.like ? `<i style="color: #eb0e34db;"  class="ri-heart-3-fill"></i>` : `<i class="ri-heart-3-line"></i>`} <span>${value.likeCount}</span></a>
-                <a href="">   <i class="ri-chat-3-line"></i>
-                <span>${value.commentCount}</span></a>
-                <a href=""><i class="ri-send-plane-fill"></i>
-                <span>${value.shareCount}</span></a>
+                  <p id= ${index} > ${value.like ? `<i style="color: #eb0e34db;"  class="ri-heart-3-fill"></i>` : `<i class="ri-heart-3-line"></i>`} <span>${value.likeCount}</span></p>
+                <p>   <i class="ri-chat-3-line"></i>
+                <span>${value.commentCount}</span></p>
+                <p><i class="ri-send-plane-fill"></i>
+                <span>${value.shareCount}</span></p>
                 </div>
                 <div class="right">
                   <i class="ri-bookmark-line"></i>
