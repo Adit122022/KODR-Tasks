@@ -230,6 +230,8 @@ function postFun(){
     posts.innerHTML = clutter;
 };
 postFun();
+
+// like feature
 let heart = document.querySelector(" .post-image #heart")
 function likeFeature(){
    
