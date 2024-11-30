@@ -68,17 +68,20 @@ body {
         .stories {
           text-align: center;
           .pfp {
-            background: linear-gradient(
-              45deg,
-              #3c74fe,
-              #ff5e68,
-              #bd19ff,
-              #3c74fe
-            );
+            // background: linear-gradient(
+            //   45deg,
+            //   #3c74fe,
+            //   #ff5e68,
+            //   #bd19ff,
+            //   #3c74fe
+            // ); 
+            background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+           
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 4px;
+            padding: 3px;
             border-radius: 50%;
           }
           p {
@@ -88,6 +91,7 @@ body {
             font-size: 0.9em;
           }
           img {
+            border: 2px solid white;
             width: 4.5em;
             height: 4.5em;
             object-position: 50% 29%;

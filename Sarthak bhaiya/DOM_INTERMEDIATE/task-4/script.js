@@ -229,21 +229,20 @@ function postFun(){
 postFun();
 let heart = document.querySelector("#heart")
 function likeFeature(){
-
     posts.addEventListener('click',function(dets){
         // console.log(post[dets.target.id])
             if(!post[dets.target.id].like ===true){
                 post[dets.target.id].likeCount++;
                 post[dets.target.id].like = true;
-                heart.style.transform = `translate(-50% ,-50% ) scale(1)`;
-                postFun();
                 
-            }else{
-                heart.style.transform = `translate(-50% ,-50% ) scale(1)`;  
+            }else{ 
                 post[dets.target.id].likeCount--;
                 post[dets.target.id].like = false;
-                postFun();
+            
             }
+            postFun();
         })
 }
 likeFeature();
+
+// heart.style.transform = `translate(-50% ,-50% ) scale(1)`;
