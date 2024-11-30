@@ -194,7 +194,7 @@ function postFun(){
                  </div>
 
                 <div class="options">
-                  <i class="ri-more-line"></i>
+                <i class="ri-more-2-line"></i>
                 </div>
                 </div>
               </div>
@@ -204,7 +204,7 @@ function postFun(){
               </div>
               <div class="like">
                 <div class="left">
-                  <p id= ${index} > ${value.like ? `<i style="color: #eb0e34db;"  class="ri-heart-3-fill"></i>` : `<i class="ri-heart-3-line"></i>`} <span>${value.likeCount}</span></p>
+                  <p id= ${index+10} > ${value.like ? `<i style="color: #eb0e34db;"  class="ri-heart-3-fill"></i>` : `<i class="ri-heart-3-line"></i>`} <span>${value.likeCount}</span></p>
                 <p>   <i class="ri-chat-3-line"></i>
                 <span>${value.commentCount}</span></p>
                 <p><i class="ri-send-plane-fill"></i>
@@ -230,22 +230,47 @@ function postFun(){
     posts.innerHTML = clutter;
 };
 postFun();
-let heart = document.querySelector("#heart")
+let heart = document.querySelector(" .post-image #heart")
 function likeFeature(){
-    posts.addEventListener('dblclick',function(dets){
-        // console.log(post[dets.target.id])
-            if(!post[dets.target.id].like ===true){
-                post[dets.target.id].likeCount++;
-                post[dets.target.id].like = true;
+   
+
+    posts.addEventListener('click',function(dets){
+        // button click pai like badega or kam hoyega
+            if(!post[dets.target.id-10].like ===true){
+                post[dets.target.id-10].likeCount++;
+                post[dets.target.id-10].like = true;
+                heart.style.transform = `translate(-50% ,-50% ) scale(1)`;
                 
             }else{ 
-                post[dets.target.id].likeCount--;
-                post[dets.target.id].like = false;
+                post[dets.target.id-10].likeCount--;
+                post[dets.target.id-10].like = false;
+                heart.style.transform = `translate(-50% ,-50% ) scale(0)`;
             
             }
+            postFun();
+        })
+
+        // image k click pai sirf like kam hoyega if like is alaredy liked
+    posts.addEventListener('dblclick',function(dets){
+        if(!post[dets.target.id].like ===true){
+            post[dets.target.id].likeCount++;
+            post[dets.target.id].like = true;
+            console.log(dets.target)
+            heart.style.transform = `translate(-50% ,-50% ) scale(1)`;
+            
+            
+            
+        }else{ 
+            post[dets.target.id].likeCount;
+            post[dets.target.id].like = true;
+            heart.style.transform = `translate(-50% ,-50% ) scale(1)`;
+            
+        
+        }
+      
+   
             postFun();
         })
 }
 likeFeature();
 
-// heart.style.transform = `translate(-50% ,-50% ) scale(1)`;
