@@ -62,11 +62,11 @@ body {
   text-align: center;
 }
 #root #parent main header .stories .pfp {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(217deg, #a723ff, #fd1d1d, #f39f28);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3px;
+  padding: 4px;
   border-radius: 50%;
 }
 #root #parent main header .stories p {
@@ -75,7 +75,7 @@ body {
   font-size: 0.7em;
 }
 #root #parent main header .stories img {
-  border: 3px solid white;
+  border: 2px solid white;
   width: 4.5em;
   height: 4.5em;
   -o-object-position: 50% 29%;
