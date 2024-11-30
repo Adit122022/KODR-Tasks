@@ -56,6 +56,7 @@ const users = [
     stories();
     
     header.addEventListener('click', function(e) {
+        
         if (e.target.tagName === "IMG") {
             const selectedUser = users[e.target.id];
          
@@ -95,7 +96,7 @@ const users = [
         setTimeout(function() {
             clearInterval(intervalue)
             storyPopup.style.display = "none"; 
-        }, 10000); 
+        }, 15000); 
     });
     
     // Close the story popup when the close button is clicked
@@ -184,10 +185,12 @@ function postFun(){
              <div class="post">
               <div class="post-header">
                 <div class="user-info">
+                  <div style="display:flex;"> 
                   <img  class="user-profile-pic" src="${value.userprofile}" alt="">
                  <div class="user">
                   <div class="user-name">${value.username}</div>
                   <div class="post-time">${value.userlocation}</div>
+                 </div>
                  </div>
 
                 <div class="options">
@@ -229,7 +232,7 @@ function postFun(){
 postFun();
 let heart = document.querySelector("#heart")
 function likeFeature(){
-    posts.addEventListener('click',function(dets){
+    posts.addEventListener('dblclick',function(dets){
         // console.log(post[dets.target.id])
             if(!post[dets.target.id].like ===true){
                 post[dets.target.id].likeCount++;
