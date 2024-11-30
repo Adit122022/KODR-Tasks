@@ -1,0 +1,24 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing :border-box;
+color: white;
+background-color: black;
+}
+html,body{
+width :100%;
+height :100%;
+}
+.post-time{
+    color: rgba(209, 199, 199, 0.734) !important;
+}
+#root #parent nav  h1{
+    font-family: "Lobster", sans-serif;
+    font-family: 100;
+    font-size: 2em;
+   
+}
+#root #parent nav  .insta-logo{
+    filter: brightness(0) invert(1);
+   
+}
