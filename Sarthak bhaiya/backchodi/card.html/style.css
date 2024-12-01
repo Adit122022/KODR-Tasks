@@ -16,6 +16,14 @@ html {
 body {
   padding: 2em 4em;
 }
+@media (max-width: 767px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em 1em;
+  }
+}
 
 h1 {
   font-size: 2em;
@@ -26,6 +34,11 @@ h1 {
   display: grid;
   gap: 1.5em;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+@media (max-width: 767px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 }
 .container .card {
   overflow: hidden;
@@ -41,6 +54,11 @@ h1 {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease;
+}
+@media (max-width: 767px) {
+  .container .card {
+    margin: 0;
+  }
 }
 .container .card:hover {
   transform: scale(1.05);
@@ -97,10 +115,13 @@ h1 {
   padding: 0.4em 0.8em;
   border: 1px solid rgba(0, 0, 0, 0.67);
   border-radius: 40px;
+  transition: all 0.2s linear;
 }
 .container .card .knowledge span:hover {
   background-color: rgba(0, 0, 255, 0.4);
   color: white;
+  font-weight: 500;
+  border: 1px solid transparent;
 }
 .container .card .knowledge #blue {
   background-color: blue;
@@ -115,6 +136,7 @@ h1 {
   width: 120%;
   display: flex;
   justify-content: center;
+  transition: all 0.2s linear;
 }
 .container .card .btn a {
   text-decoration: none;
@@ -122,6 +144,7 @@ h1 {
   border-top: 1px solid black;
   padding: 1.5em 0;
   text-align: center;
+  transition: all 0.2s linear;
 }
 .container .card .btn:hover {
   background-color: rgb(0, 68, 255);
