@@ -50,8 +50,10 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 | Project 2(a): [Events -Keyboard events]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-2(KeyboardsEvents)/keyboard-event/)                    |  
 | Project 2(b): [Events -Mouse events cursor follower]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-2(KeyboardsEvents)/mosue-move/)                    |  
 | Project 3: [Add Freinds Cards]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-3/)                    |  
-| Project 4: [Social Media UI]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-4/)                    |  
-| Project 5: [CARDS]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/backchodi/card/)                    |  
+| Project 4: [Dynamic data Cards]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/backchodi/card.html/)                    |  
+| Project 5: [Creating div on click]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/backchodi/task-1/)                    |  
+| Project 6: [ random colors]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/backchodi/math-random.html)                    |  
+| Project 8: [Social Media UI]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-4/)                    |  
 
 
 
