@@ -46,7 +46,7 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 
 | **Project Name**            | **Live Link**                      |  
 |------------------------------|------------------------------------|  
-| Project 1: [Dynamic Cards (incompelte)]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-1/)                    |  
+| Project 1: [Clock ]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/)                    |  
 | Project 2(a): [Events -Keyboard events]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-2(KeyboardsEvents)/keyboard-event/)                    |  
 | Project 2(b): [Events -Mouse events cursor follower]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-2(KeyboardsEvents)/mosue-move/)                    |  
 | Project 3: [Add Freinds Cards]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-3/)                    |  
