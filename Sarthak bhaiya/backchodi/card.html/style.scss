@@ -90,6 +90,10 @@ span{
     padding: 0.4em 0.8em;
     border: 1px solid rgba(0, 0, 0, 0.67);
     border-radius: 40px;
+    &:hover{
+      background-color: rgba(0, 0, 255, 0.4);
+      color: white;
+    }
 }
 #blue{
     background-color: blue;
