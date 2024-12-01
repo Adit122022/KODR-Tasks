@@ -41,8 +41,7 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 3. Access the `index.html` file to view the project locally or use the live preview links below.  
 
 ---
-
-## Dom_Intermediate Practice 
+## BAsIC PRACTICE PROJECTS
 ## 🌐 Live Previews  
 
 | **Project Name**            | **Live Link**                      |  
@@ -52,8 +51,10 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 | Project 2(b): [Events -Mouse events cursor follower]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-2(KeyboardsEvents)/mosue-move/)                    |  
 | Project 3: [Add Freinds Cards]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-3/)                    |  
 | Project 4: [Social Media UI]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-4/)                    |  
+| Project 5: [CARDS]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/backchodi/card/)                    |  
 
-> _Note: Replace the `#` in the Live Link with the GitHub Pages link or deployment URL for each project._  
+
+
 
 ---
 
