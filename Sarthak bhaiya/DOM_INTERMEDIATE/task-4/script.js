@@ -91,17 +91,18 @@ const users = [
        let intervalue =  setInterval(function() {
         loadingBar.style.transition = "width 8s linear"; 
         loadingBar.style.width = `${time++}%` ; 
+        // console.log(time)
     }, 100); 
-    
-        setTimeout(function() {
+ setTimeout(function() {
             clearInterval(intervalue)
             storyPopup.style.display = "none"; 
+            console.log(time)
         }, 15000); 
     });
     
     // Close the story popup when the close button is clicked
     storyPopup.addEventListener('click', function(e) {
-      
+    
         if (e.target.classList.contains("close-story")) {
             storyPopup.style.display = "none"; // Hide the story popup
         }

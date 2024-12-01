@@ -10,10 +10,10 @@ height :100%;
 #parent{
     padding: 2em 4em;
     width: 100%;
-    height: 100%;
-    overflow: scroll;
+  @media (max-width:650px){padding: 2em;
+justify-content: center;}
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2em;
     .card{
         border-radius: 12px;
