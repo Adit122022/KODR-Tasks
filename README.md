@@ -42,6 +42,7 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 
 ---
 
+## Dom_Intermediate Practice 
 ## 🌐 Live Previews  
 
 | **Project Name**            | **Live Link**                      |  
