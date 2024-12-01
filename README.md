@@ -47,9 +47,9 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 | **Project Name**            | **Live Link**                      |  
 |------------------------------|------------------------------------|  
 | Project 1: [Dynamic Cards (incompelte)]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-1/)                    |  
-| Project 2(a): [Events -Keyboard events]    | [View Live]([https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-1/](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-2(KeyboardsEvents)/keyboard-event/index.html))                    |  
-| Project 2(b): [Events -Mouse events cursor follower]    | [View Live]([https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-1/](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-2(KeyboardsEvents)/mosue-move/index.html))                    |  
-| Project 3: [Add Freinds Cards]    | [View Live]([https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-1/](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-2(KeyboardsEvents)/mosue-move/index.html))                    |  
+| Project 2(a): [Events -Keyboard events]    | [View Live]()                    |  
+| Project 2(b): [Events -Mouse events cursor follower]    | [View Live]()                    |  
+| Project 3: [Add Freinds Cards]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-3/)                    |  
 | Project 4: [Social Media UI]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-4/)                    |  
 
 > _Note: Replace the `#` in the Live Link with the GitHub Pages link or deployment URL for each project._  
