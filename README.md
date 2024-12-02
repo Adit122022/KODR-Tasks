@@ -61,6 +61,31 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 
 ---
 
+---
+## BASIC JA TASKS
+## 🌐 Live Previews  
+
+| **12 TASKS OF JS **            | **Live Link**                      |  
+|------------------------------|------------------------------------|  
+| Project 1: [Task 1 (Bulb) ]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task-1(bulb)/)                    |  
+| Project 2: [Task 2 (on click change the text)]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task1.html)                    |  
+| Project 3: [Task 3 (button clicked)]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task2.html)                    |  
+| Project 4: [Randome winner of IPL]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task6.html)                    |  
+| Project 5: [On click div size changed]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task7.html)                    |  
+| Project 6: [On click div position changed]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task8.html)                    |  
+| Project 7: [Counter ]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task9.html)                    |  
+| Project 8: [Cursure folllower ]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task10.html)                    |  
+| Project 9: [Hamburuger NavBar ]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task11.html)                    |  
+| Project 10: [Heart animation of instagram]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task12.html)                    |  
+| Project 11: [DarkMode ]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task13.html)                    |  
+| Project 12: [TextArea Reset ]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task14.html)                    |  
+                     
+
+
+
+
+---
+
 ## 🚀 Technologies Used  
 
 - **JavaScript**: Core programming language.  
