@@ -58,7 +58,64 @@ fizbuzz(15);
 Implement a function that takes an array of numbers and returns the largest number.
 Example: [1, 5, 3, 9] → 9
 
+first  way 
+-------------------------------
+using for loop
+let arr =[1, 5, 3, 9,10];
 
+let max = arr[0]
+function largestNumber(arr){
+ for(let i = 1 ;i<=arr.length ; i++){
+    if(max < arr[i]){
+        max = arr[i]
+    }
+ }
+ return max;
+}
+console.log(largestNumber(arr))
+
+-------------------------------------
+using foreach
+let arr =[1, 5, 3, 9,10];
+let max = arr[0]
+function largestNumber(arr){
+arr.forEach(element => {
+    if(max < element){
+        max = element
+    }
+ });
+ return max;
+}
+console.log(largestNumber(arr))
+-------------------------
+
+sceond way u can use  : Math.max(...a)
+
+*********************************************************************
+
+
+Intermediate Level
+
+
+**********************************************************************
+
+ 5. Remove Duplicates from an Array
+Write a function to remove duplicate values from an array.
+Example: [1, 2, 2, 3, 4, 4] → [1, 2, 3, 4]
+
+
+sceond way
+let arr =[1, 2, 2, 3, 4, 4];
+let uniqueArr = [...new Set(arr)];
+
+console.log(uniqueArr)
 */
+
+let arr =[1, 2, 2, 3, 4, 4]
+arr.filter(function(value, indx){
+    let   
+})
+
+
 
 
