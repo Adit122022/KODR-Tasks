@@ -55,6 +55,7 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 | Project 6: [ random colors]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/backchodi/math-random.html)                    |  
 | Project 7: [Image Modals]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/15_task/task-1(bulb)/task-(23-11-2024)/modal/)                    |  
 | Project 8: [Social Media UI]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-4/)                    |  
+| Project 9: [JS 3 TASK COMBINE]    | [View Live](https://adit122022.github.io/javascript-task/Sarthak%20bhaiya/DOM_INTERMEDIATE/task-5/)                    |  
 
 
 
