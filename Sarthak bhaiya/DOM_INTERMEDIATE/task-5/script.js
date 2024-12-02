@@ -38,27 +38,24 @@ document.querySelector("#btn").addEventListener("click", function(){
 second()
 
 // third task
+var arr=[{src:'https://i.pinimg.com/736x/73/68/31/736831df08a3eca1906aa2c3ebb7bbbe.jpg'},{src:'https://i.pinimg.com/474x/eb/06/00/eb0600f993982b7934ed132e6e8a9baf.jpg'},{src:'https://i.pinimg.com/736x/92/b3/0a/92b30a82293dbcbcb6fe71b09ddb0752.jpg'},{src:'https://i.pinimg.com/736x/cb/7d/56/cb7d567a96e322f05ac367c5c6d5bf93.jpg'},{src:'https://i.pinimg.com/736x/c4/cf/59/c4cf5957a397749d737c20d923a28da5.jpg'}]
 
-let arr =[
-    {src : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-png%2Finsect&psig=AOvVaw1b6Qpxbmo3URk-7vlkBf0q&ust=1733237665816000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLC009mriYoDFQAAAAAdAAAAABAE" },
-    { src : "https://img.freepik.com/premium-psd/fly-isolated-transparent-background-fly-insect-png-generative-ai_667511-5973.jpg"},
-    { src : ""}
-]
-function third(){
-   let part3 = document.querySelector("#part3");
-let btn3 = document.querySelector("#btn3");
-btn3.addEventListener("click", function(){
-// console.log(Math.random()*100 )
-    // console.log("part3 clicked")
-    let img = document.createElement('img')
-    img.src = "https://i.pinimg.com/736x/28/44/08/284408f78e8dc2511b32524a93155d6d.jpg"
-    img.style.width = "100px"
-    img.style.position = "absolute"
-    img.style.left = Math.random()*1000 +'px'
-    img.style.top = Math.random()*1000 +'px'
-    img.style.rotate = Math.random()*360 +'deg'
+function third() {
+    let part3 = document.querySelector("#part3");
+    let btn3 = document.querySelector("#btn3");
 
-    part3.appendChild(img)
-});   
+    btn3.addEventListener("click", function () {
+        console.log("Button clicked!");
+        let randomWinner = arr[Math.floor(Math.random() * arr.length)].src;
+        let img = document.createElement('img');
+        img.src = randomWinner;
+        img.style.width = "100px";
+        img.style.position = "absolute";
+        img.style.left = Math.random() * 1000 + 'px';
+        img.style.top = Math.random() * 500 + 'px'; 
+        img.style.transform = `rotate(${Math.random() * 360}deg)`;
+        part3.appendChild(img);
+    });
 }
+
 third();
