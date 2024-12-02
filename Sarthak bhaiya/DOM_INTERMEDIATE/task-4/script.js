@@ -233,11 +233,12 @@ function postFun(){
 postFun();
 
 // like feature
-let heart = document.querySelector(" .post-image #heart")
+
 function likeFeature(){
    
 
     posts.addEventListener('click',function(dets){
+        let heart = document.querySelector(" .post-image #heart")
         // button click pai like badega or kam hoyega
             if(!post[dets.target.id-10].like ===true){
                 post[dets.target.id-10].likeCount++;
@@ -255,6 +256,7 @@ function likeFeature(){
 
         // image k click pai sirf like kam hoyega if like is alaredy liked
     posts.addEventListener('dblclick',function(dets){
+        let heart = document.querySelector(" .post-image #heart")
         if(!post[dets.target.id].like ===true){
             post[dets.target.id].likeCount++;
             post[dets.target.id].like = true;
