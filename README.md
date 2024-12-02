@@ -13,7 +13,7 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 ### 2. **Sarthak Bhaiya**  
 - Includes **DOM-based projects** to demonstrate practical applications of JavaScript in web development.  
 - Each project is designed to interact with and manipulate the Document Object Model (DOM).  
-- [Live Previews](🌐-) available for projects.  
+- [Live Previews](##🌐-BAsIC PRACTICE PROJECTS) available for projects.  
 
 ---
 
@@ -62,7 +62,7 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 ---
 
 ---
-## BASIC JA TASKS
+## BASIC JS TASKS
 ## 🌐 Live Previews  
 
 | **12 TASKS OF JS **            | **Live Link**                      |  
