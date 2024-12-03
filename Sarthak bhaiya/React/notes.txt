@@ -1,3 +1,8 @@
 React is a frontend library that  provides a simple interface for creating React components that are used to render  the content of the application.
 framework and library are different.
 React started today 3 dec,2024 
+
+
+React js   - UI banane k kam aati hai (create )
+React Dom  - Browser or react ko connect karne k kaam karta hai (implementations)
+React Native- for mobile apps
