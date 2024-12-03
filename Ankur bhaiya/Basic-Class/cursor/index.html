@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing :border-box;
+        }
+        html,body{
+        width :100%;
+        height :100%;
+        }
+        #cursor{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            transform: translate(-50%,-50%);
+
+        }
+    </style>
+</head>
+<body>
+    <div id="cursor">
+
+    </div>
+    <script>
+        let cursor = document.querySelector('#cursor')
+        document.querySelector('body').addEventListener('mousemove',function(dets){
+            let x =dets.clientX
+            let y =dets.clientY
+            // console.log(x,y)
+            cursor.style.left = x + "px"
+            cursor.style.top = y + "px"
+        })
+    </script>
+</body>
+</html>
