@@ -9,6 +9,10 @@ html, body {
   height: 100%;
 }
 
+html {
+  font-size: clamp(10px, 1vw, 20px);
+}
+
 #root {
   display: flex;
   flex-direction: column;

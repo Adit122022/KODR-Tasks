@@ -87,6 +87,16 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 
 ---
 
+---
+## BASIC JS TASKS
+## 🌐 Live Previews  
+
+| **Extra projects **            | **Live Link**                      |  
+|------------------------------|------------------------------------|  
+| Project 1: [Bubble Game]    | [View Live](https://adit122022.github.io/javascript-task/Ankur%20bhaiya/bubble-game/)                    | 
+| Project 2: [Analog clock ]    | [View Live](https://adit122022.github.io/javascript-task/Ankur%20bhaiya/Analog-Clock/)                    | 
+
+---
 ## 🚀 Technologies Used  
 
 - **JavaScript**: Core programming language.  
