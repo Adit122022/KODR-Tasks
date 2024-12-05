@@ -95,6 +95,7 @@ This repository is a collection of JavaScript foundational questions and DOM-bas
 |------------------------------|------------------------------------|  
 | Project 1: [Bubble Game]    | [View Live](https://adit122022.github.io/javascript-task/Ankur%20bhaiya/bubble-game/)                    | 
 | Project 2: [Analog clock ]    | [View Live](https://adit122022.github.io/javascript-task/Ankur%20bhaiya/Analog-Clock/)                    | 
+| Project 2: [Next js ]    | [View Live](https://adit122022.github.io/javascript-task/Ankur%20bhaiya/Tailwind/class%201%20dec/)                    | 
 
 ---
 ## 🚀 Technologies Used  
