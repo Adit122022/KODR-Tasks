@@ -10,7 +10,7 @@ const Card = () => {
     ];
 
     return (
-        <div className="scrollbar flex w-[90vw] overflow-x-auto overflow-y-hidden h-[100vh] justify-center items-center gap-8 px-4">
+        <div className="scrollbar flex w-[98vw] overflow-x-scroll overflow-y-hidden h-[100vh]  items-center gap-8 px-4">
             {arr.map((value, index) => (
                 <div key={index} className=" w-[30%] h-4/5  shrink-0">
                     <img className='object-cover w-full h-full  rounded-[70px]' src={value.img} alt="" />

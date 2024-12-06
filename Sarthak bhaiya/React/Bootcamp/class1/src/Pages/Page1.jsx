@@ -21,9 +21,9 @@ hearts
 
   <p className='w-full text-lg '>NiceAtNoon is een boutique design studio gespecialiseerd in branding en webdesign.</p>
  
- <button className='py-4 px-4 underline-offset-4  rounded-2xl mt-5  hover:rounded-[3rem] transition-all ease-linear duration-200 hover:underline text-zinc-800 text-base font-semibold border border-1 bg-white '>Bekijk projecten <i class="ri-arrow-right-line ml-5"></i></button>
+  <button className='py-4 px-4 underline-offset-4  rounded-2xl mt-5  hover:rounded-[3rem] transition-all ease-linear duration-200 hover:underline text-zinc-800 text-base font-semibold border border-1 bg-white '>Bekijk projecten <i class="ri-arrow-right-line ml-5"></i></button>
  
-</div>
+ </div>
 
     </div>
     <Card/>
