@@ -6,6 +6,9 @@ body{
   width: 100vw;
   overflow-x: hidden;
 }
+html{
+  overflow-x: hidden;
+}
 
 .animate{
 animation: spin 10s linear infinite;
