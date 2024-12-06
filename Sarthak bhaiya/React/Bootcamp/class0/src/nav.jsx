@@ -1,6 +1,6 @@
 import React from 'react'
 
-const nav = () => {
+function nav() {
   return (
     <div>nav</div>
   )
