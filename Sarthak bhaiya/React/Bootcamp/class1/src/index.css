@@ -17,3 +17,6 @@ animation: spin 5s linear infinite;
     transform: rotate(360deg);
   }
 }
+.scrollbar::-webkit-scrollbar{
+  display: none;
+}

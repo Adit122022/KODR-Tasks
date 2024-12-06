@@ -1,5 +1,6 @@
 import React from 'react'
-import Card from '../components/Card'
+import Card from '../components/Page1Components/Card'
+import Text from '../components/Page1Components/Text'
 
 const Page1 = () => {
   return (
@@ -26,6 +27,7 @@ hearts
 
     </div>
     <Card/>
+    <Text/>
    </>
   )
 }
