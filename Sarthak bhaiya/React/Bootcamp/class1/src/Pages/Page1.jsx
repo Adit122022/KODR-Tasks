@@ -5,7 +5,7 @@ import Text from '../components/Page1Components/Text'
 const Page1 = () => {
   return (
    <>
-    <div className='w-full px-5 md:px-20 py-8 flex justify-between '>
+    <div className='w-full px-5 md:px-20 py-8 md:flex justify-between '>
         <h1 className='md:text-[110px] text-pretty text-7xl md:leading-[0.9] font-normal  font-serif md:w-3/5'>
        Turning heads
 and conquering
