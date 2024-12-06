@@ -5,7 +5,7 @@ const MainSection = () => {
     <>
     <div className="relative w-screen md:h-[100vh] h-[50vh] md:px-20 px-5 md:pt-20 py-5">
       {/* Wrapper with group class */}
-      <div className="relative w-full h-full group overflow-hidden rounded-3xl active:rounded-[30px] md:rounded-[3rem] md:hover:rounded-[8rem] transition-all duration-500">
+      <div className="relative w-full h-full group overflow-hidden rounded-3xl active:rounded-[30px] md:rounded-[3rem] md:hover:rounded-[8rem] hover:rounded-[5rem] transition-all duration-500">
         {/* First Image */}
         <img
           className="md:rounded-[3rem] w-full h-full object-cover transition-all duration-500   md:group-hover:scale-125"
@@ -20,7 +20,7 @@ const MainSection = () => {
         />
       </div>
     </div>
-    <div className='md:px-20 '> 
+    <div className='md:px-20 px-5'> 
         <p className='text-[#B2B2B5]'>Nieuw Schaijk</p>
         <p className='text-xl font-semibold mb-5'>De smaak van thuis</p>
         <div className='text-xs uppercase'> 
@@ -29,11 +29,11 @@ const MainSection = () => {
         </div>
     </div>
 {/* Section bottom */}
-    <div className='md:flex md:px-20'>
-   <div className='w-1/2'>
-   <div className="relative w-full h-3/4 px-12 md:pt-20 py-5">
+    <div className='md:flex md:px-20 px-5'>
+   <div className='md:w-1/2'>
+   <div className="relative w-full h-3/4 md:px-12 md:pt-20 py-5">
       {/* Wrapper with group class */}
-      <div className="relative w-full h-full group overflow-hidden rounded-[3rem] hover:rounded-[8rem] transition-all duration-500">
+      <div className="relative md:w-full md:h-full h-96  group overflow-hidden rounded-[3rem] md:hover:rounded-[8rem] hover:rounded-[5rem] transition-all duration-500">
         {/* First Image */}
         <img
           className="rounded-[3rem] w-full h-full object-cover transition-all duration-500  group-hover:scale-125"
@@ -42,7 +42,7 @@ const MainSection = () => {
         />
         {/* Second Image */}
         <img
-          className="group-hover:rounded-[8rem] opacity-0 group-hover:opacity-100 w-[400px] h-[400px] object-cover absolute transform left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[3rem] transition-all duration-500"
+          className="md:group-hover:rounded-[8rem] group-hover:rounded-[3rem] opacity-0 group-hover:opacity-100 md:w-[400px]  md:h-[400px] w-[200px]  h-[200px] object-cover absolute transform left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[3rem] transition-all duration-500"
           src="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64b7f94076df56f95d20243d_GAAF_DowntoEarth-min-p-2000.jpg"
           alt="Logo"
         />
@@ -51,8 +51,8 @@ const MainSection = () => {
     <div className='md:px-20 '> 
         <p className='text-[#B2B2B5]'>Gaaf Creaties</p>
         <p className='text-xl font-semibold mb-5'>Creating mood-boosting experiences</p>
-        <div className='text-xs uppercase'> 
-      <span className='px-3  py-[2px] border border-gray-700 rounded-lg'>  Brand Story</span>
+        <div className='text-xs uppercase flex items-center '> 
+      <span className='px-3  py-[2px] border border-gray-700 rounded-lg shrink-0 flex-wrap'>  Brand Story</span>
       <span className='px-3 ml-3 py-[2px] border border-gray-700 rounded-lg'> Merkidentiteit</span>
       <span className='px-3 ml-3 py-[2px] border border-gray-700 rounded-lg'> Webdesign</span>
         </div>
