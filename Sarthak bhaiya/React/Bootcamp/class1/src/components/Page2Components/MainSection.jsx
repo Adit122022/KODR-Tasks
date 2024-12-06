@@ -65,13 +65,13 @@ const MainSection = () => {
         {/* First Image */}
         <img
           className="rounded-[3rem] w-full h-full object-cover transition-all duration-500  group-hover:scale-125"
-          src="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/65492b562e62e676d4159713_NS_Wayfinding%20_%20NaN-p-2000.jpg"
+          src="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64bbb716dc15a767d726cdea_DM_header-p-2000.jpg  "
           alt="Background"
         />
         {/* Second Image */}
         <img
           className="group-hover:rounded-[8rem] opacity-0 group-hover:opacity-100 w-[400px] h-[400px] object-cover absolute transform left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[3rem] transition-all duration-500"
-          src="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/65492b6d98261b9aedd2482e_NS_Logo-NaN-p-500.jpg"
+          src="https://cdn.prod.website-files.com/648884be5f32a12e5da2392f/64bbb59c356882b9497fea77_DM_Hand%20Holding%20Pin-min-p-2000.jpg"
           alt="Logo"
         />
       </div>
