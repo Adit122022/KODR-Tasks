@@ -3,8 +3,8 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div className='w-full px-20 py-8 flex justify-between'>
-<div className='flex justify-between w-1/2'>
+    <div className='md:w-full px-5 md:px-20 py-8 md:flex justify-between '>
+<div className='flex justify-between items-center md:w-1/2'>
 <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="100%" viewBox="0 0 192 30" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
 <g clip-path="url(#clip0_501_267)">
 <path d="M28.9365 7.22506C30.6729 7.22506 32.0805 5.81515 32.0805 4.07594C32.0805 2.33673 30.6729 0.926819 28.9365 0.926819C27.2001 0.926819 25.7925 2.33673 25.7925 4.07594C25.7925 5.81515 27.2001 7.22506 28.9365 7.22506Z" fill="currentColor"></path>
@@ -26,7 +26,7 @@ const Nav = () => {
 <path d="M25.9397 51.6C12.0931 51.6 0.827148 40.2276 0.827148 26.25C0.827148 12.2724 12.0931 0.899994 25.9397 0.899994C39.7863 0.899994 51.0522 12.2724 51.0522 26.25C51.0522 40.2276 39.7863 51.6 25.9397 51.6ZM25.9397 2.35361C13.6629 2.34791 3.67327 13.0705 3.67327 26.25C3.67327 39.4295 13.6629 50.1464 25.9397 50.1464C38.2164 50.1464 48.2061 39.4238 48.2061 26.25C48.2061 13.0762 38.2164 2.34791 25.9397 2.34791V2.35361Z" fill="currentColor"></path>
 </svg>
 </div>
-<div className="flex w-1/2 justify-end">
+<div className="flex md:w-1/2 md:justify-end mt-5 md:mt-0 justify-center">
   <button className='py-2 px-4 rounded-2xl hover:bg-black hover:text-white hover:border-transparent transition-all ease-linear duration-300 text-gray-400 text-base font-normal border border-1 border-gray-400 '>Projecten</button>
   <button className='py-2 px-4 rounded-2xl hover:bg-black hover:text-white hover:border-transparent transition-all ease-linear duration-300 text-gray-400 text-base font-normal border border-1 border-gray-400 mx-2 '>Over</button>
   <button className='py-2 px-4 rounded-2xl hover:bg-black hover:text-white hover:border-transparent transition-all ease-linear duration-300 underline text-black text-base font-bold border border-1 border-gray-400 '>Contact</button>

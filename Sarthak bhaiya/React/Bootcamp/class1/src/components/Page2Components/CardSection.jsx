@@ -29,27 +29,27 @@ const CardSection = () => {
     ];
 
     return (
-       <div className='w-screen h-screen bg-white'>
-       <div className='px-20 pt-20'>
+       <div className='w-screen md:h-screen bg-white'>
+       <div className='md:px-20 pt-20 px-10'>
         <p>Services</p>
-        <div className='w-full h-full flex justify-between'>
-        <p className='mt-8 text-2xl w-[20%] font-semibold'>Zo onderscheiden we je van de norm</p>
-        <button class="p-4 underline-offset-4  content-end rounded-2xl h-fit  hover:rounded-[3rem] transition-all ease-linear duration-200 hover:underline 
+        <div className='w-full h-full md:flex justify-between'>
+        <p className='mt-8 text-2xl md:w-[20%] font-semibold'>Zo onderscheiden we je van de norm</p>
+        <button class="md:p-4 px-4 py-2 mt-10 md:mt-0 underline-offset-4  content-end rounded-2xl h-fit  hover:rounded-[3rem] transition-all ease-linear duration-200 hover:underline 
        bg-black  text-white text-base font-semibold border border-1 border-gray-950 ">Lees meer <i class="ri-arrow-right-line ml-5"></i></button>
         </div>
        </div>
-        <div className="flex md:w-[98vw] w-full md:h-[80vh] md:px-20 items-center md:gap-5 gap-3 px-4 ">
+        <div className="md:flex md:w-[98vw] w-full md:h-[80vh] md:px-20 items-center md:gap-5 gap-3 px-4 ">
             {arr.map((value, index) => (
                 <div
                     key={index}
-                    className="md:w-[25%] w-28  md:h-4/5 shrink-0  rounded-3xl overflow-hidden group ">
-                  <div className='w-full h-1/2 overflow-hidden group-hover:rounded-[3rem] transition-all duration-500'>
+                    className="md:w-[25%] w-full  h-4/5 shrink-0  rounded-3xl mb-20   overflow-hidden group ">
+                  <div className='w-full md:h-1/2 overflow-hidden group-hover:rounded-[3rem] transition-all duration-500'>
                   <img  className="object-cover w-full h-full group-hover:scale-110 transition-all duration-500"
                         src={value.img}
                         alt={value.heading}
                     />
                   </div>
-                    <div  className="flex flex-col justify-center gap-5 h-1/2 px-4 group-hover:rounded-[3rem] transition-all duration-500" style={{ backgroundColor: value.color }} >
+                    <div  className="flex flex-col justify-center gap-5 md:h-1/2 px-4 pb-2 group-hover:rounded-[3rem] transition-all duration-500" style={{ backgroundColor: value.color }} >
                         <div className='flex justify-between w-full'>
                         <h2 className="text-2xl text-white mb-2">{value.heading}</h2>
                         <i class="opacity-0 group-hover:opacity-100 ri-arrow-right-line text-white duration-500"></i>
