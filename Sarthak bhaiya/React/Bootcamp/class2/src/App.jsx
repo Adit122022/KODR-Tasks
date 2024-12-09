@@ -25,7 +25,7 @@ const narutoCharacters = [
       role: "Rogue Ninja"
     },
     {
-      img: "https://i.pinimg.com/736x/6d/25/96/6d2596b4650527880113c1b493fd2f6e.jpg",
+      img: "https://i.pinimg.com/736x/1d/94/de/1d94dec4ce20b564fe32b397041dbd44.jpg",
       name: "Sakura Haruno",
       age: 17,
       famousLine: "A smile is the easiest way out of a difficult situation.",
@@ -39,27 +39,27 @@ const narutoCharacters = [
       role: "Jonin/Team 7 Leader"
     },
     {
-      img: "https://example.com/image5.jpg",
+      img: "https://i.pinimg.com/736x/bf/5d/0a/bf5d0a8186d748bdb8e1dd999f37d113.jpg",
       name: "Shikamaru Nara",
       age: 17,
       famousLine: "Sometimes I wish I was just a cloud, floating along.",
       role: "Tactician"
     }, {
-      img: "https://i.pinimg.com/236x/34/fc/cc/34fccc2715b5aa63baf55e81fb7e4492.jpg",
+      img: "https://i.pinimg.com/736x/ce/61/f8/ce61f8ec257019ffc52c408ecd53264e.jpg",
       name: "Lady Tsunade",
       age: 55,
       famousLine: "People become stronger because they have memories they can’t forget.",
       role: "Fifth Hokage"
     },
     {
-      img: "https://example.com/image7.jpg",
+      img: "https://i.pinimg.com/736x/f1/e3/e2/f1e3e21901df85682ff4bb3883bb4ed3.jpg",
       name: "Jiraiya",
       age: 54,
       famousLine: "A person grows up when they're able to overcome hardships. Protection is important, but there are some things a person must learn on their own.",
       role: "Legendary Sannin"
     },
     {
-      img: "https://example.com/image8.jpg",
+      img: "https://i.pinimg.com/736x/59/46/85/5946859c39e84cafa98c19931db5a7e8.jpg",
       name: "Obito Uchiha",
       age: 31,
       famousLine: "Those who abandon their friends are even worse than scum.",
@@ -73,7 +73,7 @@ const narutoCharacters = [
       role: "Founder of the Uchiha Clan"
     },
     {
-      img: "https://example.com/image10.jpg",
+      img: "https://i.pinimg.com/736x/19/ed/ea/19edea95b1bb88897f7289c873876abf.jpg",
       name: "Pain (Nagato)",
       age: 35,
       famousLine: "Feel pain. Contemplate pain. Accept pain. Those who do not know pain can never know true peace.",
@@ -82,12 +82,14 @@ const narutoCharacters = [
   ];
   
   return (
-    <div className='flex flex-wrap gap-5  w-screen h-screen overflow-x-hidden overflow-y-scroll scrollbar p-10 bg-slate-400'>
-{narutoCharacters.map(function (character){
+    <div className='flex flex-wrap gap-5  w-screen h-screen  p-10'>
+ <div className="flex flex-wrap gap-5  w-screen h-screen overflow-x-hidden overflow-y-scroll scrollbar p-10 bg-slate-400">
+ {narutoCharacters.map(function (character){
   return(
     <Card character={character}/>
   )
 })}
+ </div>
     </div>
   )
 }
