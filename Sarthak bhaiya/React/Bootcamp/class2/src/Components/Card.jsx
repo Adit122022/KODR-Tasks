@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({character}) => {
   return (
-    <div className='text-white w-80 flex-grow h-3/4 flex group hover:justify-center hover:items-center  shadow border rounded-xl flex-shrink-0  relative overflow-hidden'>
+    <div className='text-white w-80 flex-grow h-3/4 flex group hover:justify-center hover:items-center  shadow-md  rounded-xl flex-shrink-0  relative overflow-hidden'>
         <div className="w-full h-full overflow-hidden">
         <img className='w-full h-full group-hover:scale-110 transition-all duration-500 object-cover object-top' src={character.img} alt="" />
         </div>

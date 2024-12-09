@@ -82,15 +82,15 @@ const narutoCharacters = [
   ];
   
   return (
-    <div className='flex flex-wrap gap-5  w-screen h-screen  p-10'>
- <div className="flex flex-wrap gap-5  w-screen h-screen overflow-x-hidden overflow-y-scroll scrollbar p-10 bg-slate-400">
+   
+ <div className="flex flex-wrap gap-5  w-screen h-screen overflow-x-hidden overflow-y-scroll scrollbar p-10 ">
  {narutoCharacters.map(function (character){
   return(
     <Card character={character}/>
   )
 })}
  </div>
-    </div>
+  
   )
 }
 
