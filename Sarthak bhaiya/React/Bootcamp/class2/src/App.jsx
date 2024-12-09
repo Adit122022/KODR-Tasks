@@ -81,7 +81,7 @@ const App = () => {
       age: 90,
       famousLine: "Wake up to reality! Nothing ever goes as planned in this accursed world.",
       role: "Founder of the Uchiha Clan",
-      textColor: "#000000" // Black for his power and ominous presence
+      textColor: "#6A1E55" // Black for his power and ominous presence
     },
     {
       img: "https://i.pinimg.com/736x/19/ed/ea/19edea95b1bb88897f7289c873876abf.jpg",
@@ -103,8 +103,8 @@ const App = () => {
   
   
   return (
-   <div className='w-screen h-screen overflow-x-hidden overflow-y-scroll scrollbar p-10 bg-[#D7D3BF]'>
-    <h1 className='w-full text-8xl  text-center font-sans font-bold uppercase p-20 text-[#A59D84]'>Naruto Characters</h1>
+   <div className='w-screen h-screen overflow-x-hidden overflow-y-scroll scrollbar p-10 bg-gradient-to-bl from-[#D7D3BF] via-[#ECEBDE] to-[#C1BAA1]'>
+    <h1 className='w-full text-8xl  text-center font-sans font-bold uppercase p-20 text-[#b1a374]'>Naruto Characters</h1>
  <div className="flex flex-wrap gap-5  w-full h-full ">
  {narutoCharacters.map(function (character){
   return(
