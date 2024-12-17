@@ -6,12 +6,12 @@ const Button = () => {
 
   return (
     <>
-      <div className="w-screen h-screen bg-black flex justify-center items-center">
+      <div className= "w-full bg-black flex justify-center items-center py-5 absolute">
         <button
           onClick={() => {
             setFlage(true);
           }}
-          className="text-white px-8 py-3 border border-green-400"
+          className="w-40 text-white px-8 py-3 border border-green-400 rounded-2xl"
         >
           Click
         </button>

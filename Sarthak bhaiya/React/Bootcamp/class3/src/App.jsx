@@ -5,7 +5,7 @@ import Button from './components/toggel/Button'
 
 const App = () => {
   return (
-    <div>
+    <div className='relative w-screen h-screen overflow-x-hidden overflow-y-scroll'>
 <Button/>
     </div>
   )

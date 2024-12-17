@@ -26,9 +26,9 @@ const FormHandling = () => {
 
   return (
     <>
-      <div className="flex h-screen justify-center items-center bg-[#686363]  w-screen ">
+      <div className="flex h-screen justify-center absolute z-50   items-center backdrop-blur-md backdrop-opacity-55 md:backdrop-filter-none bg-[#0d0d0de6]  w-screen ">
         <form
-          className="w-1/2 flex items-center border-green-400 border text-white  py-12  rounded-xl justify-center"
+          className="w-1/2  bg-[#ffffff87] backdrop-blur-xl flex items-center border-green-400 border text-white   py-12  rounded-xl justify-center"
           onSubmit={submitHandler}
         >
           <div className="w-1/2 h-full flex flex-col gap-10">
