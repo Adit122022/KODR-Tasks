@@ -101,7 +101,7 @@ const Form = () => {
 
          {/* Cards Section */}
          {showCards && (
-        <div className="w-full   text-white flex flex-wrap gap-6 md:p-6 p-0">
+        <div className="w-full   text-white flex flex-wrap gap-6 md:p-6 p-0 justify-center  ">
           {AllData.map((data, index) => (
             <Card key={index} data={data} onDelete={deleteCard} />
           ))}

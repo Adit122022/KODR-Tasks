@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Form from './Components/Form'
+import Card from './Components/Card'
 
 const App = () => {
   const [display, setdisplay] = useState(false)

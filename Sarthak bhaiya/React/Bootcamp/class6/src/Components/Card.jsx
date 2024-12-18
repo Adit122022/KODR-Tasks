@@ -5,7 +5,7 @@ const Card = ({ data ,onDelete }) => {
     <div       style={{
         backgroundColor: data.gender === "Male" ? "#D4EBF8" : "#EFB6C8", // Blue for male, pink for female
       }}
- className="border-2 border-transparent hover:opacity-90 hover:border-[#9AA6B2] hover:scale-105 transition-all duration-500   w-fit h-fit  flex-grow rounded-lg flex items-center justify-between flex-shrink-0 px-4  py-2  shadow-2xl  group">
+ className="border-2 border-transparent hover:opacity-90 hover:border-[#9AA6B2] hover:scale-105 transition-all duration-500   w-fit h-fit   rounded-lg flex items-center justify-between flex-shrink-0 px-4  py-2  shadow-2xl  group">
       <div className=" w-16 h-16 overflow-hidden rounded-full">
         <img
           className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-125"
