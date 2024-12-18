@@ -21,9 +21,7 @@ function App() {
       <ScoreBoard moves={moves} score={score} />
       <GameBoard updateMoves={updateMoves} updateScore={updateScore} />
     </div>
-    <div className="bg-red-500 w-32 h-32">
-    Test Box
-  </div></>
+  </>
   );
 }
 
