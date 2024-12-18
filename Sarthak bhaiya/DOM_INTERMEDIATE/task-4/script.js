@@ -257,14 +257,13 @@ function likeFeature(){
         // image k click pai sirf like kam hoyega if like is alaredy liked
     posts.addEventListener('dblclick',function(dets){
         let heart = document.querySelector(" .post-image #heart")
+        console.log(heart)
         if(!post[dets.target.id].like ===true){
             post[dets.target.id].likeCount++;
             post[dets.target.id].like = true;
             console.log(dets.target)
             heart.style.transform = `translate(-50% ,-50% ) scale(1)`;
-            
-            
-            
+                
         }else{ 
             post[dets.target.id].likeCount;
             post[dets.target.id].like = true;
@@ -272,7 +271,7 @@ function likeFeature(){
             
         
         }
-      
+     
    
             postFun();
         })
