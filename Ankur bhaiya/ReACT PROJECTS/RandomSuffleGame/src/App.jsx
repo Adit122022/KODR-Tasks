@@ -10,16 +10,20 @@ function App() {
   const updateScore = () => setScore(score + 1);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-500 to-indigo-700 text-white flex flex-col items-center p-4">
-      <header className="text-center py-6">
+   <>
+    <div className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white flex flex-col items-center py-6">
+      <header className="text-center mb-6">
         <h1 className="text-4xl font-extrabold drop-shadow-md">
           Memory Game
         </h1>
-        <p className="text-lg mt-2 opacity-80">Match the cards to win!</p>
+        <p className="text-lg mt-2 opacity-80">Test your memory and have fun!</p>
       </header>
       <ScoreBoard moves={moves} score={score} />
       <GameBoard updateMoves={updateMoves} updateScore={updateScore} />
     </div>
+    <div className="bg-red-500 w-32 h-32">
+    Test Box
+  </div></>
   );
 }
 

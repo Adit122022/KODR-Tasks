@@ -7,12 +7,12 @@ function GameBoard({ updateMoves, updateScore }) {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
+
   useEffect(() => {
     const shuffledCards = [...initialCardValues, ...initialCardValues]
       .sort(() => Math.random() - 0.5)
       .map((value, index) => ({ id: index, value, isFlipped: false }));
     setCards(shuffledCards);
-    console.log(shuffledCards); // Debug log
   }, []);
 
   const handleCardClick = (card) => {
@@ -41,21 +41,16 @@ function GameBoard({ updateMoves, updateScore }) {
   };
 
   return (
-    <div className="grid grid-cols-4 gap-4 mt-6">
-  {cards.length > 0 ? (
-    cards.map((card) => (
-      <Card
-        key={card.id}
-        value={card.value}
-        isFlipped={flippedCards.includes(card) || matchedCards.includes(card.id)}
-        onClick={() => handleCardClick(card)}
-      />
-    ))
-  ) : (
-    <p>Loading cards...</p>
-  )}
-</div>
-
+    <div className="grid grid-cols-4 gap-4 mt-6 p-4">
+      {cards.map((card) => (
+        <Card
+          key={card.id}
+          value={card.value}
+          isFlipped={flippedCards.includes(card) || matchedCards.includes(card.id)}
+          onClick={() => handleCardClick(card)}
+        />
+      ))}
+    </div>
   );
 }
 
