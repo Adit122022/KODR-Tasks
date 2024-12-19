@@ -11,15 +11,18 @@ function App() {
 
   return (
    <>
-    <div className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white flex flex-col items-center py-6">
-      <header className="text-center mb-6">
-        <h1 className="text-4xl font-extrabold drop-shadow-md">
+    <div className="h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white flex flex-col items-center py-6">
+      <header className="text-center mb-6 flex gap-24 items-center w-full justify-center">
+<div>
+<h1 className="text-5xl font-extrabold drop-shadow-md">
           Memory Game
         </h1>
-        <p className="text-lg mt-2 opacity-80">Test your memory and have fun!</p>
-      </header>
+        <p className="text-xl mt-2 opacity-80">FLIP THE CARD AND MATCH THE EMOJI</p>
+</div>
       <ScoreBoard moves={moves} score={score} />
+      </header>
       <GameBoard updateMoves={updateMoves} updateScore={updateScore} />
+     
     </div>
   </>
   );

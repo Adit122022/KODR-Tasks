@@ -14,7 +14,7 @@ function Card({ value, isFlipped, onClick }) {
             isFlipped ? 'hidden' : ''
           }`}
         >
-          ?
+          OwO
         </div>
         <div
           className={`absolute inset-0 flex items-center justify-center bg-green-400 rounded-lg text-white text-3xl font-bold ${
