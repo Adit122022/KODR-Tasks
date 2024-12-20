@@ -3,7 +3,7 @@ import Form from './component/Form'
 
 const App = () => {
   return (
-    <div>
+    <div className='w-screen h-screen overflow-hidden'>
      <Form/>
     </div>
   )

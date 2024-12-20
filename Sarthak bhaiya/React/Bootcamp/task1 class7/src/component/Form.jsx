@@ -1,47 +1,56 @@
 import React, { useState } from 'react';
+import { MdDelete } from "react-icons/md";
 
 function FormUI() {
-  const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    phoneNumber: '',
-    favorite: false,
-  });
+  const [Name, setName] = useState("");
+  const [Company, setCompany] = useState("");
+  const [Phone, setPhone] = useState('');
+  const [Favorite,setFavorite] = useState(false);
+  const [AllData, setAllData] = useState([]);
 
-  const [submittedData, setSubmittedData] = useState([]);
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({...formData,[name]: type === 'checkbox' ? checked : value, });
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmittedData([...submittedData, formData]);
-    setFormData({ name: '', company: '', phoneNumber: '', favorite: false });
+    const obj = {
+      name: Name,
+      company: Company,
+      phone: Phone,
+    favorite:Favorite
+    };
+    setAllData([...AllData, obj]);
+    setName("");
+    setPhone("");
+    setCompany("");
+    setFavorite(true);
+  
+  };
+  const deleteCard = (id) => {
+    const updatedData = [...AllData,];
+    updatedData.splice(id,1)
+    setAllData(updatedData);
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
-        <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">Contact Form</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
+    <div className="h-full w-full bg-gray-100 flex ">
+      <div className="bg-white shadow-lg rounded-lg p-8 w-1/2 h-full ">
+        <h2 className="text-2xl font-bold text-gray-800  mb-6">ADD Contact </h2>
+        <form onSubmit={handleSubmit} className="w-full p-8  shadow-xl">
+          <div className='mb-5'>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-              Name
+              Name:
             </label>
             <input
               type="text"
               id="name"
               name="name"
-              value={formData.name}
-              onChange={handleChange}
+              value={Name}
+              onChange={(e)=> setName(e.target.value)}
               className="w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Enter your name"
               required
             />
           </div>
-          <div>
+          <div className='mb-5'>
             <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
               Company
             </label>
@@ -49,14 +58,14 @@ function FormUI() {
               type="text"
               id="company"
               name="company"
-              value={formData.company}
-              onChange={handleChange}
+              value={Company}
+              onChange={(e)=> setCompany(e.target.value)}
               className="w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Enter your company"
               required
             />
           </div>
-          <div>
+          <div className='mb-5'>
             <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-1">
               Phone Number
             </label>
@@ -64,20 +73,20 @@ function FormUI() {
               type="tel"
               id="phoneNumber"
               name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handleChange}
+              value={Phone}
+              onChange={(e)=> setPhone(e.target.value)}
               className="w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Enter your phone number"
               required
             />
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center mb-5">
             <input
               type="checkbox"
               id="favorite"
               name="favorite"
-              checked={formData.favorite}
-              onChange={handleChange}
+              checked={Favorite}
+              onChange={(e) => setFavorite(e.target.checked)}
               className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
             />
             <label htmlFor="favorite" className="ml-2 block text-sm text-gray-700">
@@ -91,21 +100,29 @@ function FormUI() {
             Submit
           </button>
         </form>
-
-        <div className="mt-6">
-          <h3 className="text-lg font-medium text-gray-800">Submitted Data:</h3>
-          <ul className="mt-2 space-y-2">
-            {submittedData.map((data, index) => (
-              <li key={index} className="p-2 border border-gray-300 rounded-md">
-                <p><strong>Name:</strong> {data.name}</p>
-                <p><strong>Company:</strong> {data.company}</p>
-                <p><strong>Phone:</strong> {data.phoneNumber}</p>
-                <p><strong>Favorite:</strong> {data.favorite ? 'Yes' : 'No'}</p>
+      </div>
+      <div className=" p-8 w-1/2 bg-slate-300 h-screen overflow-y-scroll">
+          <h1 className='text-4xl font-semibold text-[#262525] mb-10'>Contact List </h1>
+         
+            {AllData.map((data, index) => (
+              <li key={index} className="p-2 border bg-slate-100  border-gray-300 rounded-md list-none shadow-md mt-4 flex justify-between">
+                <div>
+                    <h1 className='text-xl font-bold text-[#262525]'>{data.name}</h1>
+                    <h2 className=' mt-2 text-xm font-bold text-slate-600'> Company : {data.company}</h2>
+                    <h2 className='text-xm font-bold text-slate-600'> Phone Number : {data.phoneNumber}</h2>
+                </div>
+              <div className='flex flex-col items-center justify-between' >
+                <button className='text-2xl text-red-500 hover:text-red-900' onClick={(index)=>{
+                  deleteCard(index)
+                }}>
+                  <MdDelete />
+</button>
+              {data.favorite ? (<span className='bg-orange-400 text-white px-2 py-1 rounded-full'>Favorite </span> ): ''}
+              </div>
               </li>
             ))}
-          </ul>
+         
         </div>
-      </div>
     </div>
   );
 }
