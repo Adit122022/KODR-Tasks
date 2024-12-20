@@ -1,9 +1,47 @@
-import React from 'react'
+import React from "react";
 
-const Cart = () => {
+const Cart = ({ cart, updateQuantity, removeFromCart }) => {
   return (
-    <div>Cart</div>
-  )
-}
+    <div className="mt-6">
+      <h2 className="text-xl font-bold mb-4">Shopping Cart</h2>
+      {cart.length === 0 ? (
+        <p className="text-gray-600">Your cart is empty.</p>
+      ) : (
+        cart.map((item) => (
+          <div
+            key={item.id}
+            className="flex justify-between items-center p-4 border-b"
+          >
+            <div>
+              <h3 className="font-semibold">{item.name}</h3>
+              <p>${item.price}</p>
+              <p>Quantity: {item.quantity}</p>
+            </div>
+            <div>
+              <button
+                onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                className="px-2 bg-gray-200 rounded mx-1"
+              >
+                -
+              </button>
+              <button
+                onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                className="px-2 bg-gray-200 rounded mx-1"
+              >
+                +
+              </button>
+              <button
+                onClick={() => removeFromCart(item.id)}
+                className="px-4 bg-red-500 text-white rounded"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        ))
+      )}
+    </div>
+  );
+};
 
-export default Cart
+export default Cart;
