@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MdDelete } from "react-icons/md";
+import { MdOutlineDeleteOutline } from "react-icons/md";
 
 function FormUI() {
   const [Name, setName] = useState("");
@@ -105,19 +106,21 @@ function FormUI() {
           <h1 className='text-4xl font-semibold text-[#262525] mb-10'>Contact List </h1>
          
             {AllData.map((data, index) => (
-              <li key={index} className="p-2 border bg-slate-100  border-gray-300 rounded-md list-none shadow-md mt-4 flex justify-between">
+              <li key={index} className="p-4 border bg-slate-100  border-gray-300 rounded-md list-none shadow-md mt-4 flex justify-between">
                 <div>
                     <h1 className='text-xl font-bold text-[#262525]'>{data.name}</h1>
                     <h2 className=' mt-2 text-xm font-bold text-slate-600'> Company : {data.company}</h2>
                     <h2 className='text-xm font-bold text-slate-600'> Phone Number : {data.phoneNumber}</h2>
                 </div>
-              <div className='flex flex-col items-center justify-between' >
-                <button className='text-2xl text-red-500 hover:text-red-900' onClick={(index)=>{
+              <div className='flex flex-col items-center justify-between px-5' >
+                <button className=' text-red-500  hover:text-red-900' onClick={(index)=>{
                   deleteCard(index)
                 }}>
-                  <MdDelete />
+               
+                <span className='text-3xl transition-all duration-300  animate-ping'>  <MdOutlineDeleteOutline /></span>
+
 </button>
-              {data.favorite ? (<span className='bg-orange-400 text-white px-2 py-1 rounded-full'>Favorite </span> ): ''}
+              {data.favorite ? (<span className='bg-orange-500 hover:bg-orange-700 text-white px-2 py-1 rounded-full'>Favorite </span> ): ''}
               </div>
               </li>
             ))}
