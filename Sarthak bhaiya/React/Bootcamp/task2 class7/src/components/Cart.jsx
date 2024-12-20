@@ -12,11 +12,19 @@ const Cart = ({ cart, updateQuantity, removeFromCart }) => {
             key={item.id}
             className="flex justify-between items-center p-4 border-b"
           >
-            <div>
+            {/* image */}
+            <div className="w-36 rounded-lg h-36 overflow-hidden">
+              <img className="w-full object-cover h-full " src={item.img} alt="" />
+            </div>
+          {/*  text and buttons */}
+          <div className="flex  items-center gap-16">
+              {/* content */}
+              <div>
               <h3 className="font-semibold">{item.name}</h3>
               <p>${item.price}</p>
               <p>Quantity: {item.quantity}</p>
             </div>
+            {/* buttons */}
             <div>
               <button
                 onClick={() => updateQuantity(item.id, item.quantity - 1)}
@@ -37,6 +45,7 @@ const Cart = ({ cart, updateQuantity, removeFromCart }) => {
                 Remove
               </button>
             </div>
+          </div>
           </div>
         ))
       )}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Product from "./components/Product.jsx";
 import Cart from "./components/Cart.jsx";
+import Navbar from "./components/Navbar.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   const products = [
@@ -83,16 +85,26 @@ const App = () => {
   );
 
   return (
-    <div className="w-screen px-20 py-4 h-screen overflow-x-hidden">
+<>
+
+      <Navbar />
+
+    
+<div className="w-screen px-20 py-4 h-screen overflow-x-hidden">
       <h1 className="text-2xl font-bold mb-4">Product Shop</h1>
-      <Product products={products} addToCart={addToCart} />
-      <Cart
+      <Routes>
+        <Route path="/products" element={   <Product products={products} addToCart={addToCart} />
+     } />
+        <Route path="/cart" element={ <Cart
         cart={cart}
         updateQuantity={updateQuantity}
         removeFromCart={removeFromCart}
-      />
+      />} />
+        {/* Add your other routes here */}
+      </Routes>
       <h2 className="text-xl font-semibold mt-4">Total Price: ${totalPrice.toFixed(2)}</h2>
     </div>
+   </>
   );
 };
 
