@@ -33,9 +33,9 @@ function FormUI() {
 
   return (
     <div className="h-full w-full bg-gray-100 flex ">
-      <div className="bg-white shadow-lg rounded-lg p-8 w-1/2 h-full ">
+      <div className="bg-white shadow-lg rounded-lg p-8 w-1/2 h-full bg-gradient-to-r from-blue-200 to-blue-500">
         <h2 className="text-2xl font-bold text-gray-800  mb-6">ADD Contact </h2>
-        <form onSubmit={handleSubmit} className="w-full p-8  shadow-xl">
+        <form onSubmit={handleSubmit} className="w-full p-8  shadow-xl bg-slate-200 rounded-md">
           <div className='mb-5'>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
               Name:
@@ -102,7 +102,7 @@ function FormUI() {
           </button>
         </form>
       </div>
-      <div className=" p-8 w-1/2 bg-slate-300 h-screen overflow-y-scroll">
+      <div className=" p-8 w-1/2 bg-slate-300 h-screen overflow-y-scroll bg-gradient-to-r from-blue-200 to-blue-500">
           <h1 className='text-4xl font-semibold text-[#262525] mb-10'>Contact List </h1>
          
             {AllData.map((data, index) => (
