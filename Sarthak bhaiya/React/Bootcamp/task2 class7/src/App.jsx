@@ -86,12 +86,10 @@ const App = () => {
 
   return (
 <>
-
+<div className="w-screen mdpx-20 py-4 h-screen overflow-x-hidden">
       <Navbar />
 
-    
-<div className="w-screen px-20 py-4 h-screen overflow-x-hidden">
-      <h1 className="text-2xl font-bold mb-4">Product Shop</h1>
+      <h1 className="text-2xl font-bold m-4 ">Product Shop</h1>
       <Routes>
         <Route path="/products" element={   <Product products={products} addToCart={addToCart} />
      } />
@@ -102,7 +100,7 @@ const App = () => {
       />} />
         {/* Add your other routes here */}
       </Routes>
-      <h2 className="text-xl font-semibold mt-4">Total Price: ${totalPrice.toFixed(2)}</h2>
+      {/* <h2 className="text-xl font-semibold mt-4">Total Price: ${totalPrice.toFixed(2)}</h2> */}
     </div>
    </>
   );
