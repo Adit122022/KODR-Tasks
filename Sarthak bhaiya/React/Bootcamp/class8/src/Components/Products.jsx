@@ -1,39 +1,45 @@
 import React from 'react';
+import { useCart } from '../Context/CartContext'; // Import the useCart hook
 
 const Products = ({ products }) => {
+  const { addToCart } = useCart(); // Access the addToCart function
+
   return (
-    <div className="w-full h-full overflow-y-scroll  p-5">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {products.map((item) => (
-          <div
-            className="bg-white shadow-lg rounded-lg p-4 hover:shadow-2xl transition-shadow duration-300"
-            key={item.id}
-          >
-                 <div className='flex justify-between mb-4 items-center'>
-          <span className='px-2 py-1 rounded-full font-serif text-xs  bg-[#d1d1b7d7]'>{item.category}</span>
-          <h1 className=" text-lg font-semibold text-gray-800 line-clamp-2">
-              ${item.price}
-            </h1>
-          </div>
-            <div className="w-full h-48 flex justify-center items-center overflow-hidden">
+    <div className="w-full h-full  mb-12 py-12">
+      <div className="container mx-auto mb-12 px-6">
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+          Our Featured Products
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className=" rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
+            >
+              {/* Product Image */}
               <img
-                className="object-contain max-w-full max-h-full"
-                src={item.image}
-                alt={item.title}
+                src={product.image}
+                alt={product.title}
+                className="w-full h-48 object-contain rounded-t-lg"
               />
+
+              <div className="p-6">
+                {/* Category and Price */}
+                <div className="text-sm text-gray-500 mb-2">{product.category}</div>
+                <h3 className="text-xl font-semibold text-gray-800 truncate">{product.title}</h3>
+                <p className="text-lg font-bold text-blue-500 mt-2">${product.price}</p>
+
+                {/* Add to Cart Button */}
+                <button
+                  onClick={() => addToCart(product)} // Call addToCart when the button is clicked
+                  className="w-full bg-blue-500 text-white py-2 mt-4 rounded-lg hover:bg-blue-600 transition duration-300"
+                >
+                  Add to Cart
+                </button>
+              </div>
             </div>
-      
-           <h1 className="mt-4 w-3/4 text-lg font-semibold text-gray-800 line-clamp-2">
-              {item.title}
-            </h1>  
-            <p className="mt-4 text-xs font-medium text-gray-500 line-clamp-3">
-              {item.description}
-            </p>
-            <button className=" mt-12 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-  ADD TO CART
-</button>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
