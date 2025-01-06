@@ -6,6 +6,7 @@ import Kodr from './Pages/Kodr';
 import Domintation from './Pages/Domintation';
 import Nav from './Components/Nav';
 import Frontend from './Fontentend-Backend/Frontend';
+import Error from './Pages/Error';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/domi/:id" element={<Domintation />} />
           <Route path='domi/:id/frontend' element ={<Frontend/>} />
           <Route path="/kodr" element={<Kodr />} />
+          <Route path='/*' element={<Error/>}/>
         </Routes>
       </div>
     </div>
