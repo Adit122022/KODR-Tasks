@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const AddtoStory = () => {
     const [profile, setprofile] = useState('')
     const [image, setImage] = useState('')
     const [story, setStory] = useState('')
+    
     const handleSubmit = (e) => {
         e.preventDefault()
     

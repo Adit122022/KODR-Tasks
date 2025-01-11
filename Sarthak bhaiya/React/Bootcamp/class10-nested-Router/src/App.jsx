@@ -21,6 +21,7 @@ const App = () => {
           <Route path="/courses" element={<Courses />} />
           <Route path="/domi/:id" element={<Domintation />} />
           <Route path='domi/:id/frontend' element ={<Frontend/>} />
+          <Route path='domi/:id/backend' element ={<Frontend/>} />
           <Route path="/kodr" element={<Kodr />} />
           <Route path='/*' element={<Error/>}/>
         </Routes>
