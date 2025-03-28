@@ -3,8 +3,8 @@ import { motion } from "framer-motion"
 
 const Card = ({character ,ref}) => {
   return (
-    <motion.div  dragConstraints={ref} drag  whileDrag={{scale:1.05}} className='absolute z-10' >
-    <div className='mb-10 md:mb-0 text-white md:w-80 flex-grow  md:h-[70vh] h-[50vh] flex group hover:justify-center hover:items-center  shadow-md  rounded-3xl flex-shrink-0  relative overflow-hidden'>
+    <motion.div  dragConstraints={ref} drag  whileDrag={{scale:1.05}} className=' flex items-center justify-center' >
+    <div className='mb-10 md:mb-0 text-white md:w-80 flex-grow  md:h-[70vh] h-[50vh] flex group hover:justify-center hover:items-center justify-center  shadow-md  rounded-3xl flex-shrink-0  relative overflow-hidden'>
         <div className="w-full h-full overflow-hidden">
         <img className='w-full h-full group-hover:scale-110 transition-all duration-500 object-cover object-top' src={character.img} alt="" />
         </div>
